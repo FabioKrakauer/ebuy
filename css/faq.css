@@ -1,0 +1,85 @@
+.logo{
+	background-color: chocolate;
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+.logo-title{
+	font-family: 'Georgia', sans-serif;
+	font-style: italic;
+	color: white;
+	font-size: 30px;
+	margin-top: 10px;
+}
+/* Código anterior */
+/* .navigation{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-ul{
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-li{
+	display: flex;
+	padding: 0 5px;
+} */
+/* Código atual */
+
+.navigation{
+	margin-top: 0;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.nav-ul{
+	display: flex;
+	width: 90vw;
+	justify-content: space-between;
+}
+
+.nav-a{
+	text-decoration: none;
+	color: chocolate;
+	cursor: pointer;
+	border-bottom: transparent solid 5px;
+	font-size: 21px;
+}
+.nav-a:hover{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	border-bottom: #003791 solid 3px;
+}
+
+.flex-container{
+	width: 90vw;
+	margin: 10px auto;
+}
+.title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.flex-line{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.content{
+	width: 44%;
+	display: inline-block;
+}
+.faq-text-title{
+	font-size: 1.2em;
+	font-weight: bold;
+}

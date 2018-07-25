@@ -1,0 +1,116 @@
+.logo{
+	background-color: chocolate;
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+.logo-title{
+	font-family: 'Georgia', sans-serif;
+	font-style: italic;
+	color: white;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.navigation{
+	margin-top: 0;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.nav-ul{
+	display: flex;
+	width: 90vw;
+	justify-content: space-between;
+}
+
+.nav-a{
+	text-decoration: none;
+	color: chocolate;
+	cursor: pointer;
+	border-bottom: transparent solid 5px;
+	font-size: 21px;
+}
+.nav-a:hover{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	border-bottom: #003791 solid 3px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+/* .flex-form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 10px;
+	width: 100%;
+} */
+.flex-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+	.flex-form-item{
+		display: flex;
+	  	width: 100%;
+	  	flex-direction: column;
+	  	justify-content: center;
+	  	margin-bottom: 14px;
+	}
+
+	  .form-label{
+	  	margin-bottom: 10px;
+	  }
+
+	  .form-input{
+	  	width: 100%;
+	  	border-radius: 8px;
+	  	box-sizing: border-box;
+	  	text-align: left;
+	  	height: 5vh;
+	  }
+
+	/* Comentei pois não existe classe="flex-row" no html. */
+  /* .flex-row
+  	display: flex;
+  	flex-direction: row;
+  } */
+  .btn-submit{
+  	background-color: #0ed646;
+  	border: 2px solid #0ed646;
+  	color: #fff;
+  	text-align: center;
+  	cursor: pointer;
+		margin-top: 10px;
+  }
+
+	.option{
+		display: flex;
+		justify-content: space-between;
+	}
+
+  .option-register{
+  	text-decoration: none;
+  	color: #2879fc;
+  	/* margin-bottom: 6px; */
+  	/* display: inline-block; */
+  	width: 100px;
+  }
+  .option-register:hover{
+  	color: #639eff;
+  }
