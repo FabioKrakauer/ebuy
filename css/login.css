@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .flex-logo{
 	background-color: chocolate;
 	width: 100vw;
@@ -62,37 +61,6 @@
 .nav-li{
 	display: flex;
 	justify-content: center;
-=======
-.logo{
-	background-color: chocolate;
-	width: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-}
-.logo-title{
-	font-family: 'Georgia', sans-serif;
-	font-style: italic;
-	color: white;
-	font-size: 30px;
-	margin-top: 10px;
-}
-
-.navigation{
-	margin-top: 0;
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.75);
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-
-.nav-ul{
-	display: flex;
-	width: 90vw;
-	justify-content: space-between;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 }
 
 .nav-a{
@@ -112,7 +80,6 @@
 .flex-container{
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
 	flex-direction: column;
 	align-items: center;
   width: 100vw;
@@ -122,11 +89,6 @@
 	top: 60px;
 	z-index: -1;
 	height: calc(100vh - 70px);
-=======
-  width: 100vw;
-  margin-top: 10px;
-  box-sizing: border-box;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 }
 
 /* .flex-form{
@@ -141,10 +103,7 @@
   flex-direction: column;
   width: 90%;
   box-sizing: border-box;
-<<<<<<< HEAD
 	height: calc(100vh - 85px);
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 }
 
 	.flex-form-item{
@@ -157,18 +116,11 @@
 
 	  .form-label{
 	  	margin-bottom: 10px;
-<<<<<<< HEAD
 			font-size: 1.1em;
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 	  }
 
 	  .form-input{
 	  	width: 100%;
-<<<<<<< HEAD
-=======
-	  	border-radius: 8px;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 	  	box-sizing: border-box;
 	  	text-align: left;
 	  	height: 5vh;
@@ -180,7 +132,6 @@
   	flex-direction: row;
   } */
   .btn-submit{
-<<<<<<< HEAD
   	background-color: chocolate;
   	border: 2px solid chocolate;
   	color: #fff;
@@ -189,14 +140,6 @@
   	cursor: pointer;
 	margin-top: 10px;
 	border-radius: 8px;
-=======
-  	background-color: #0ed646;
-  	border: 2px solid #0ed646;
-  	color: #fff;
-  	text-align: center;
-  	cursor: pointer;
-		margin-top: 10px;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
   }
 
 	.option{
@@ -214,7 +157,6 @@
   .option-register:hover{
   	color: #639eff;
   }
-<<<<<<< HEAD
 
 	.footer{
 	  margin-top: 10px;
@@ -224,5 +166,3 @@
 	  text-align: center;
 	  padding: 10px;
 	}
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c

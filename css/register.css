@@ -19,14 +19,11 @@
 	font-size: 30px;
 }
 
-<<<<<<< HEAD
 .logo-title-a{
 	text-decoration: none;
 	color: black;
 }
 
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 #toggle-menu-icon{
 	height: 30px;
 	width: 35px;
@@ -82,12 +79,8 @@
 
 .flex-container{
   display: flex;
-<<<<<<< HEAD
 	flex-direction: column;
 	align-items: center;
-=======
-  justify-content: center;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
   width: 100vw;
   margin-top: 10px;
   box-sizing: border-box;
@@ -129,7 +122,6 @@
   margin-top: 7px;
 }
 
-<<<<<<< HEAD
 .btn-register{
   margin-bottom: 10px;
   height: 7vh;
@@ -146,10 +138,4 @@
   height:25px;
   text-align: center;
   padding: 10px;
-=======
-.register{
-  margin-bottom: 10px;
-  height: 7vh;
-  background-color: red;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .flex-logo{
 	background-color: chocolate;
 	width: 100vw;
@@ -62,55 +61,6 @@
 .nav-li{
 	display: flex;
 	justify-content: center;
-=======
-.logo{
-	background-color: chocolate;
-	width: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-}
-.logo-title{
-	font-family: 'Georgia', sans-serif;
-	font-style: italic;
-	color: white;
-	font-size: 30px;
-	margin-top: 10px;
-}
-/* Código anterior */
-/* .navigation{
-	margin-top: 5px;
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-}
-
-.nav-ul{
-	display: flex;
-	flex-direction: row;
-}
-
-.nav-li{
-	display: flex;
-	padding: 0 5px;
-} */
-/* Código atual */
-
-.navigation{
-	margin-top: 0;
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.75);
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-
-.nav-ul{
-	display: flex;
-	width: 90vw;
-	justify-content: space-between;
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 }
 
 .nav-a{
@@ -120,10 +70,7 @@
 	border-bottom: transparent solid 5px;
 	font-size: 21px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 .nav-a:hover{
 	text-decoration: none;
 	color: black;
@@ -132,7 +79,6 @@
 }
 
 .flex-container{
-<<<<<<< HEAD
 	width: 100vw;
 	margin-top: 10px;
 	position: absolute;
@@ -144,17 +90,11 @@
 	align-items: center;
 }
 
-=======
-	width: 90vw;
-	margin: 10px auto;
-}
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 .title{
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.4em;
 }
-<<<<<<< HEAD
 .line-hr{
 	width: 100%;
 
@@ -166,32 +106,22 @@
 	width: 90%;
 }
 
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 .flex-line{
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
-<<<<<<< HEAD
 	/* width: 90%; */
 }
 
-=======
-}
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 .content{
 	width: 44%;
 	display: inline-block;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
 .faq-text-title{
 	font-size: 1.2em;
 	font-weight: bold;
 }
-<<<<<<< HEAD
 
 .footer{
   margin-top: 10px;
@@ -201,5 +131,3 @@
   text-align: center;
   padding: 10px;
 }
-=======
->>>>>>> d469d52536e3fa4b6c9abe9a11b45355e59a357c
