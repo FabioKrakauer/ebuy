@@ -10,24 +10,26 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-  			<label class="logo-title">E-Buy</label>
-  		</div>
-      <div class="navigation">
-        <ul class="nav-ul">
-          <li class="nav-li">
-            <a class="nav-a" href="index.html">Home</a>
-          </li>
-          <li class="nav-li">
-            <a class="nav-a" href="login.html">Login</a>
-          </li>
-          <li class="nav-li">
-            <a class="nav-a" href="register.html">Cadastro</a>
-          </li>
-          <li class="nav-li">
-            <a class="nav-a" href="faq.html">FAQ</a>
-          </li>
-        </ul>
+      <div class="flex-logo">
+  			<label class="logo-title"><a class="logo-title-a" href="index.html">E-Buy</a></label>
+        <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
+        <input type="checkbox" id="toggle-menu">
+        <div class="navigation">
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a class="nav-a" href="index.html">Home</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="login.html">Login</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="register.html">Cadastro</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <div class="flex-container">
@@ -44,16 +46,19 @@
           <div class="option-remember">
             <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
           </div>
-          <a class="option-register" href="cadastro.html">Registre-se já!</a>
+          <a class="option-register" href="remeber.html">Esqueceu sua senha!</a>
         </div>
         <div class="flex-form-item">
           <input type="submit" class="form-input btn-submit" name="btn" value="Logar">
         </div>
       </form>
+      <footer>
+        <div class="footer">
+          Copyright 2018 - Todos os direitos reservados -
+        </div>
+      </footer>
     </div>
 
-    <footer>
-    </footer>
 
   </body>
 </html>

@@ -1,0 +1,144 @@
+.flex-logo{
+	background-color: chocolate;
+	width: 100vw;
+	height: 60px ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-right: 5%;
+	padding-left: 5%;
+	position: fixed;
+	top: 0;
+}
+
+.logo-title{
+	font-family: 'Georgia', sans-serif;
+	font-style: italic;
+	color: black;
+	font-size: 30px;
+}
+
+.logo-title-a{
+	text-decoration: none;
+	color: black;
+}
+
+#toggle-menu-icon{
+	height: 30px;
+	width: 35px;
+}
+
+#toggle-menu{
+	display: none;
+}
+
+#toggle-menu:checked + .navigation{
+	display: block;
+	position: fixed;
+	top: 60px;
+	height: calc(100vh - 60px);
+	background-color: #3d2418;
+	width: 100%;
+	left: 0;
+	overflow-y: auto;
+	opacity: 1;
+	visibility: visible;
+}
+
+.navigation{
+	display: none;
+}
+
+.nav-ul{
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	justify-content: space-around;
+	height: calc(100vh - 60px);
+}
+
+.nav-li{
+	display: flex;
+	justify-content: center;
+}
+
+.nav-a{
+	text-decoration: none;
+	color: chocolate;
+	cursor: pointer;
+	border-bottom: transparent solid 5px;
+	font-size: 21px;
+}
+.nav-a:hover{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	border-bottom: #003791 solid 3px;
+}
+
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: 0;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width:100%;
+  height: 40vh;
+}
+
+.banner img{
+  width:100%;
+}
+
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+}
+
+.product {
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: 30vh;
+}
+
+h2{
+  font-size: 25px;
+  font-family: serif;
+}
+
+p{
+  font-size: 15px;
+}
+
+.footer{
+  margin-top: 10px;
+  background: chocolate;
+  color: black;
+  height:25px;
+  text-align: center;
+  padding: 10px;
+}
