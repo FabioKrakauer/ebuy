@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,22 +12,22 @@
   <body>
     <header>
       <div class="flex-logo">
-        <label class="logo-title"><a class="logo-title-a" href="index.html">E-Buy</a></label>
+        <label class="logo-title"><a class="logo-title-a" href="index.php">E-Buy</a></label>
         <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
         <input type="checkbox" id="toggle-menu">
         <div class="navigation">
           <ul class="nav-ul">
             <li class="nav-li">
-              <a class="nav-a" href="index.html">Home</a>
+              <a class="nav-a" href="index.php">Home</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="login.html">Login</a>
+              <a class="nav-a" href="login.php">Login</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="register.html">Cadastro</a>
+              <a class="nav-a" href="register.php">Cadastro</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="faq.html">FAQ</a>
+              <a class="nav-a" href="faq.php">FAQ</a>
             </li>
           </ul>
         </div>

@@ -1,0 +1,52 @@
+.logo{
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.flex-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.flex-form-item{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.item-label{
+  font-size: 1.1em;
+}
+
+.item-input{
+  height: 5vh;
+  margin-top: 4px;
+}
+
+.radio{
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio input{
+  margin: 0;
+  margin-top: 7px;
+}
+
+.register{
+  margin-bottom: 10px;
+  height: 7vh;
+  background-color: red;
+}
