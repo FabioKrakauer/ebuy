@@ -10,8 +10,10 @@
   </head>
   <body>
     <header class="flex-header">
-        <label class="logo"><a class="logo-a" href="index.php">E-Buy</a></label>
-        <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
+        <label class="header-logo">
+          <a class="logo-a" href="index.php">E-Buy</a>
+        </label>
+        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
         <input type="checkbox" id="toggle-menu">
         <div class="navigation">
           <ul class="nav-ul">
