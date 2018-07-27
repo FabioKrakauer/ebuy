@@ -52,15 +52,15 @@
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Sexo: <span class="item-span">*</span></label>
-          <div class="radio">
-            <div class="radio-item">
-              <input type="radio" name="gender" value="male"><label for="gender">Masculino</label>
+          <div class="item-radio">
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="male"><label for="gender">Masculino</label>
             </div>
-            <div class="radio-item">
-              <input type="radio" name="gender" value="female"><label for="gender">Feminino</label>
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="female"><label for="gender">Feminino</label>
             </div>
-            <div class="radio-item">
-              <input type="radio" name="gender" value="other"><label for="gender">Other</label>
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Other</label>
             </div>
           </div>
         </div>

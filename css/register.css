@@ -115,12 +115,12 @@
   margin-top: 4px;
 }
 
-.radio{
+.item-radio{
   display: flex;
   justify-content: space-between;
 }
 
-.radio input{
+.option-input{
   margin: 0;
   margin-top: 7px;
 }
