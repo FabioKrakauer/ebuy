@@ -9,9 +9,8 @@
 	<title>FAQ - E-buy</title>
 </head>
 <body>
-	<header>
-		<div class="flex-logo">
-			<label class="logo-title"><a class="logo-title-a" href="index.php">E-Buy</a></label>
+	<header class="flex-header">
+			<label class="logo"><a class="logo-a" href="index.php">E-Buy</a></label>
 			<label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
 			<input type="checkbox" id="toggle-menu">
 			<div class="navigation">
@@ -30,7 +29,6 @@
 					</li>
 				</ul>
 			</div>
-		</div>
 	</header>
 	<div class="flex-container">
 		<h1 class="title">FAQ - Perguntas Frequentes</h1>
@@ -87,9 +85,6 @@
 				<p class="faq-text-title">Posso alterar o pedido após ele ter sido finalizado</p>
 				<p class="faq-text">Não trabalhamos com esta opção, é recomendado revisar o seu pedido antes de finalizá-lo</p>
 				</div>
-			</div>
-			<div class="flex-line">
-				<hr class="line-hr">
 			</div>
 		</div>
 		<footer>

@@ -1,4 +1,5 @@
-.flex-logo{
+/* HEADER */
+.flex-header{
 	background-color: chocolate;
 	width: 100vw;
 	height: 60px ;
@@ -12,14 +13,14 @@
 	top: 0;
 }
 
-.logo-title{
+.logo{
 	font-family: 'Georgia', sans-serif;
 	font-style: italic;
 	color: black;
 	font-size: 30px;
 }
 
-.logo-title-a{
+.logo-a{
 	text-decoration: none;
 	color: black;
 }
@@ -78,6 +79,7 @@
 	border-bottom: #003791 solid 3px;
 }
 
+/* BODY */
 .flex-container{
 	width: 100vw;
 	margin-top: 10px;

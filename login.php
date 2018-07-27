@@ -9,9 +9,8 @@
     <title>Login</title>
   </head>
   <body>
-    <header>
-      <div class="flex-logo">
-  			<label class="logo-title"><a class="logo-title-a" href="index.php">E-Buy</a></label>
+    <header class="flex-header">
+        <label class="logo"><a class="logo-a" href="index.php">E-Buy</a></label>
         <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
         <input type="checkbox" id="toggle-menu">
         <div class="navigation">
@@ -30,7 +29,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </header>
     <div class="flex-container">
       <form action="login.php" class="flex-form">
