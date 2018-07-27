@@ -35,22 +35,20 @@
     <div class="flex-container">
       <form action="login.php" class="flex-form">
         <div class="flex-form-item">
-          <label class="form-label">E-mail ou usuário*</label>
-          <input class="form-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
+          <label class="item-label">E-mail ou usuário*</label>
+          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
         <div class="flex-form-item">
-          <label class="form-label">Senha*</label>
-          <input class="form-input" type="password" name="email" placeholder="Digite sua senha!">
+          <label class="item-label">Senha*</label>
+          <input class="item-input" type="password" name="email" placeholder="Digite sua senha!">
         </div>
-        <div class=" option">
+        <div class="flex-form-option">
           <div class="option-remember">
             <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
           </div>
-          <a class="option-register" href="remeber.html">Esqueceu sua senha!</a>
+          <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
         </div>
-        <div class="flex-form-item">
-          <input type="submit" class="form-input btn-submit" name="btn" value="Logar">
-        </div>
+        <input type="submit" class="item-input btn-submit" name="btn" value="Logar">
       </form>
       <footer>
         <div class="footer">
