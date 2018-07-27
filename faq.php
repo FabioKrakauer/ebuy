@@ -89,10 +89,8 @@
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div class="footer">
-				Copyright 2018 - Todos os direitos reservados -
-			</div>
+		<footer class="footer">
+			Copyright 2018 - Todos os direitos reservados -
 		</footer>
 	</div>
 </body>

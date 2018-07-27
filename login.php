@@ -50,10 +50,8 @@
         </div>
         <input type="submit" class="item-input btn-submit" name="btn" value="Logar">
       </form>
-      <footer>
-        <div class="footer">
-          Copyright 2018 - Todos os direitos reservados -
-        </div>
+      <footer class="footer">
+        Copyright 2018 - Todos os direitos reservados -
       </footer>
     </div>
   </body>

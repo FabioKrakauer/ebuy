@@ -78,10 +78,8 @@
         </div>
         <input class="btn-register" type="submit" name="register" value="Cadastrar">
       </form>
-      <footer>
-        <div class="footer">
-          Copyright 2018 - Todos os direitos reservados -
-        </div>
+      <footer class="footer">
+        Copyright 2018 - Todos os direitos reservados -
       </footer>
     </div>
   </body>

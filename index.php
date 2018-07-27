@@ -59,7 +59,7 @@
         </article>
       </div>
       <footer class="footer">
-          Copyright 2018 - Todos os direitos reservados -
+        Copyright 2018 - Todos os direitos reservados -
       </footer>
     </div>
   </body>
