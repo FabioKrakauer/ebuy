@@ -110,6 +110,10 @@
   font-size: 1.1em;
 }
 
+.item-span{
+	color: red;
+}
+
 .item-input{
   height: 5vh;
   margin-top: 4px;
