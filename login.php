@@ -33,14 +33,29 @@
       </div>
     </header>
     <div class="flex-container">
-      <form action="login.php" class="flex-form">
+      <?php if(!empty($_GET["error"])){ ?>
+      <div class="flex-error">
+        <?php
+            $value = $_GET["error"];
+            if($value == 1){
+              echo "Seu usuario não existe!";
+            }elseif($value == 2){
+              echo "Seu usuario ou senha estão incorretos!";
+            }else{
+              echo "Algo deu errado! Tente novamente!";
+            }
+
+          ?>
+      </div>
+      <?php } ?>
+    <form action="loginverify.php" class="flex-form" method="post">
         <div class="flex-form-item">
           <label class="form-label">E-mail ou usuário*</label>
-          <input class="form-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
+          <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
-          <input class="form-input" type="password" name="email" placeholder="Digite sua senha!">
+          <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
         </div>
         <div class=" option">
           <div class="option-remember">
