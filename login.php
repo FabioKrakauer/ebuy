@@ -36,7 +36,7 @@
       <form action="login.php" class="flex-form">
         <div class="flex-form-item">
           <label class="form-label">E-mail ou usuário*</label>
-          <input class="form-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
+          <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
