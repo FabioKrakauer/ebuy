@@ -40,7 +40,7 @@
         </div>
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
-          <input class="form-input" type="password" name="email" placeholder="Digite sua senha!">
+          <input class="form-input" type="password" name="pass" placeholder="Digite sua senha!">
         </div>
         <div class=" option">
           <div class="option-remember">
