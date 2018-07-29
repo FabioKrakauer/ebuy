@@ -9,53 +9,75 @@
     <title>Login</title>
   </head>
   <body>
-    <header>
-      <div class="flex-logo">
-  			<label class="logo-title"><a class="logo-title-a" href="index.html">E-Buy</a></label>
-        <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
+    <header class="flex-header">
+        <label class="header-logo">
+          <a class="logo-a" href="index.php">E-Buy</a>
+        </label>
+        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
         <input type="checkbox" id="toggle-menu">
         <div class="navigation">
           <ul class="nav-ul">
             <li class="nav-li">
-              <a class="nav-a" href="index.html">Home</a>
+              <a class="nav-a" href="index.php">Home</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="login.html">Login</a>
+              <a class="nav-a" href="login.php">Login</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="register.html">Cadastro</a>
+              <a class="nav-a" href="register.php">Cadastro</a>
             </li>
             <li class="nav-li">
-              <a class="nav-a" href="faq.html">FAQ</a>
+              <a class="nav-a" href="faq.php">FAQ</a>
             </li>
           </ul>
         </div>
-      </div>
     </header>
     <div class="flex-container">
-      <form action="login.php" class="flex-form">
+      <?php if(!empty($_GET["error"])){ ?>
+      <div class="flex-error">
+        <?php
+            $value = $_GET["error"];
+            if($value == 1){
+              echo "Seu usuario não existe!";
+            }elseif($value == 2){
+              echo "Seu usuario ou senha estão incorretos!";
+            }else{
+              echo "Algo deu errado! Tente novamente!";
+            }
+
+          ?>
+      </div>
+      <?php } ?>
+    <form action="loginverify.php" class="flex-form" method="post">
         <div class="flex-form-item">
           <label class="form-label">E-mail ou usuário*</label>
           <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
+<<<<<<< HEAD
           <input class="form-input" type="password" name="pass" placeholder="Digite sua senha!">
+=======
+          <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
+
+          <label class="item-label">E-mail ou usuário*</label>
+          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
-        <div class=" option">
+        <div class="flex-form-item">
+          <label class="item-label">Senha*</label>
+          <input class="item-input" type="password" name="email" placeholder="Digite sua senha!">
+>>>>>>> master
+        </div>
+        <div class="flex-form-option">
           <div class="option-remember">
             <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
           </div>
-          <a class="option-register" href="remeber.html">Esqueceu sua senha!</a>
+          <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
         </div>
-        <div class="flex-form-item">
-          <input type="submit" class="form-input btn-submit" name="btn" value="Logar">
-        </div>
+        <input type="submit" class="item-input btn-submit" name="btn" value="Logar">
       </form>
-      <footer>
-        <div class="footer">
-          Copyright 2018 - Todos os direitos reservados -
-        </div>
+      <footer class="footer">
+        Copyright 2018 - Todos os direitos reservados -
       </footer>
     </div>
   </body>

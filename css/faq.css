@@ -1,4 +1,5 @@
-.flex-logo{
+/* HEADER */
+.flex-header{
 	background-color: chocolate;
 	width: 100vw;
 	height: 60px ;
@@ -12,19 +13,19 @@
 	top: 0;
 }
 
-.logo-title{
+.header-logo{
 	font-family: 'Georgia', sans-serif;
 	font-style: italic;
 	color: black;
 	font-size: 30px;
 }
 
-.logo-title-a{
+.logo-a{
 	text-decoration: none;
 	color: black;
 }
 
-#toggle-menu-icon{
+.toggle-menu-icon{
 	height: 30px;
 	width: 35px;
 }
@@ -78,6 +79,7 @@
 	border-bottom: #003791 solid 3px;
 }
 
+/* CONTAINER */
 .flex-container{
 	width: 100vw;
 	margin-top: 10px;
@@ -95,32 +97,32 @@
 	font-weight: bold;
 	font-size: 1.4em;
 }
-.line-hr{
-	width: 100%;
 
-}
-.articles{
+.flex-articles{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 90%;
 }
 
-.flex-line{
+.flex-articles-line{
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
-	/* width: 90%; */
 }
 
-.content{
+.faq{
 	width: 44%;
 	display: inline-block;
 }
 
-.faq-text-title{
+.faq-title{
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+.line-hr{
+	width: 100%;
 }
 
 .footer{
