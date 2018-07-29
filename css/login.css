@@ -94,7 +94,6 @@
 	height: calc(100vh - 70px);
 }
 
-<<<<<<< HEAD
 /* .flex-form{
 	display: flex;
 	justify-content: center;
@@ -119,8 +118,6 @@
 .flex-error:hover{
 	border: #cc1a1a solid 3px;
 }
-=======
->>>>>>> master
 .flex-form{
   display: flex;
   flex-direction: column;
@@ -128,7 +125,6 @@
   box-sizing: border-box;
   height: calc(100vh - 85px);
 }
-<<<<<<< HEAD
 .flex-form-item{
 		display: flex;
 	  	width: 100%;
@@ -206,7 +202,6 @@
 	text-align: center;
 	cursor: pointer;
 	margin-top: 15px;
->>>>>>> master
 	border-radius: 8px;
 }
 

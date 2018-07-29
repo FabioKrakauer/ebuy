@@ -55,19 +55,7 @@
         </div>
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
-<<<<<<< HEAD
-          <input class="form-input" type="password" name="pass" placeholder="Digite sua senha!">
-=======
           <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
-
-          <label class="item-label">E-mail ou usuário*</label>
-          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label">Senha*</label>
-          <input class="item-input" type="password" name="email" placeholder="Digite sua senha!">
->>>>>>> master
-        </div>
         <div class="flex-form-option">
           <div class="option-remember">
             <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
