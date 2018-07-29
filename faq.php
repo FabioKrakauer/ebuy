@@ -38,7 +38,7 @@
 			<div class="flex-articles-line">
 				<div class="faq">
 				<p class="faq-title">Existe uma quantidade máxima no meu pedido?</p>
-				<p class="faq-text">Não, a quantidade de items por pedido é ilimitada</p>
+				<p class="faq-text">Não, a quantidade de items por pedido é ilimitada.</p>
 				</div>
 				<hr>
 				<div class="faq">
