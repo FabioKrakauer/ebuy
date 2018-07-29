@@ -9,10 +9,11 @@
     <title>Cadastro</title>
   </head>
   <body>
-    <header>
-      <div class="flex-logo">
-        <label class="logo-title"><a class="logo-title-a" href="index.php">E-Buy</a></label>
-        <label for="toggle-menu"><img id="toggle-menu-icon" src="images/toggle.png" alt=""></label>
+    <header class="flex-header">
+        <label class="header-logo">
+          <a class="logo-a" href="index.php">E-Buy</a>
+        </label>
+        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
         <input type="checkbox" id="toggle-menu">
         <div class="navigation">
           <ul class="nav-ul">
@@ -30,7 +31,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </header>
     <div class="flex-container">
       <form class="flex-form">
@@ -52,15 +52,15 @@
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Sexo: <span class="item-span">*</span></label>
-          <div class="radio">
-            <div class="radio-item">
-              <input type="radio" name="gender" value="male"><label for="gender">Masculino</label>
+          <div class="item-radio">
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="male"><label for="gender">Masculino</label>
             </div>
-            <div class="radio-item">
-              <input type="radio" name="gender" value="female"><label for="gender">Feminino</label>
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="female"><label for="gender">Feminino</label>
             </div>
-            <div class="radio-item">
-              <input type="radio" name="gender" value="other"><label for="gender">Other</label>
+            <div class="radio-option">
+              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Other</label>
             </div>
           </div>
         </div>
@@ -78,10 +78,8 @@
         </div>
         <input class="btn-register" type="submit" name="register" value="Cadastrar">
       </form>
-      <footer>
-        <div class="footer">
-          Copyright 2018 - Todos os direitos reservados -
-        </div>
+      <footer class="footer">
+        Copyright 2018 - Todos os direitos reservados -
       </footer>
     </div>
   </body>

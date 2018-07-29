@@ -1,4 +1,5 @@
-.flex-logo{
+/* HEADER */
+.flex-header{
 	background-color: chocolate;
 	width: 100vw;
 	height: 60px ;
@@ -12,19 +13,19 @@
 	top: 0;
 }
 
-.logo-title{
+.header-logo{
 	font-family: 'Georgia', sans-serif;
 	font-style: italic;
 	color: black;
 	font-size: 30px;
 }
 
-.logo-title-a{
+.logo-a{
 	text-decoration: none;
 	color: black;
 }
 
-#toggle-menu-icon{
+.toggle-menu-icon{
 	height: 30px;
 	width: 35px;
 }
@@ -70,6 +71,7 @@
 	border-bottom: transparent solid 5px;
 	font-size: 21px;
 }
+
 .nav-a:hover{
 	text-decoration: none;
 	color: black;
@@ -77,6 +79,7 @@
 	border-bottom: #003791 solid 3px;
 }
 
+/* CONTAINER */
 .flex-container{
   display: flex;
   justify-content: center;
@@ -91,13 +94,6 @@
 	height: calc(100vh - 70px);
 }
 
-/* .flex-form{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	margin-top: 10px;
-	width: 100%;
-} */
 .flex-form{
   display: flex;
   flex-direction: column;
@@ -106,63 +102,58 @@
 	height: calc(100vh - 85px);
 }
 
-	.flex-form-item{
-		display: flex;
-	  	width: 100%;
-	  	flex-direction: column;
-	  	justify-content: center;
-	  	margin-bottom: 14px;
-	}
+.flex-form-item{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 14px;
+}
 
-	  .form-label{
-	  	margin-bottom: 10px;
-			font-size: 1.1em;
-	  }
+.item-label{
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
 
-	  .form-input{
-	  	width: 100%;
-	  	box-sizing: border-box;
-	  	text-align: left;
-	  	height: 5vh;
-	  }
+.item-input{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	height: 5vh;
+}
 
-	/* Comentei pois não existe classe="flex-row" no html. */
-  /* .flex-row
-  	display: flex;
-  	flex-direction: row;
-  } */
-  .btn-submit{
-  	background-color: chocolate;
-  	border: 2px solid chocolate;
-  	color: #fff;
-  	height: 7vh;
-  	text-align: center;
-  	cursor: pointer;
-	margin-top: 10px;
+.flex-form-option{
+	display: flex;
+	justify-content: space-between;
+}
+
+.option-forget{
+	display: flex;
+	align-items: flex-end;
+	text-decoration: none;
+	color: #2879fc;
+}
+
+/* .option-forget:hover{
+	color: #639eff;
+} */
+
+.btn-submit{
+	background-color: chocolate;
+	border: 2px solid chocolate;
+	color: #fff;
+	height: 7vh;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 15px;
 	border-radius: 8px;
-  }
+}
 
-	.option{
-		display: flex;
-		justify-content: space-between;
-	}
-
-  .option-register{
-  	text-decoration: none;
-  	color: #2879fc;
-  	/* margin-bottom: 6px; */
-  	/* display: inline-block; */
-  	width: 100px;
-  }
-  .option-register:hover{
-  	color: #639eff;
-  }
-
-	.footer{
-	  margin-top: 10px;
-	  background: chocolate;
-	  color: black;
-	  height:25px;
-	  text-align: center;
-	  padding: 10px;
-	}
+.footer{
+  margin-top: 10px;
+  background: chocolate;
+  color: black;
+  height:25px;
+  text-align: center;
+  padding: 10px;
+}
