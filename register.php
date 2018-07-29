@@ -1,37 +1,58 @@
 <?php
 
+  function isPartUppercase($string) {
+    return (bool) preg_match('/[A-Z]/', $string);
+  }
+
+  function haveNumber($string) {
+    return (bool) preg_match('/[0-9]/', $string);
+  }
+
+  function passwordValidation($password, $password_conf) {
+    if ((haveNumber($password) && isPartUppercase($password) && strlen($password) >= 8) && $password === $password_conf) {
+      return true;
+    }
+    return false;
+  }
+
+  function nameValidation($name) {
+    if (preg_match("/^[a-zA-Z ]*$/",$name)) {
+      return true;
+    }
+    return false;
+  }
+
   $email = $password = $password_conf = $name = $gender = $cpf = $birth = $phone = '';
   $emailErr = $passwordErr = $password_confErr = $nameErr = $genderErr = $cpfErr = $birthErr = $phoneErr = '';
 
   if ($_POST) {
     if (empty($_POST['email'])) {
       $emailErr = 'E-mail é obrigatório';
-    } else {
+    } elseif (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       $email = $_POST['email'];
+    } else {
+      $emailErr = 'E-mail inválido';
     }
 
     if (empty($_POST['password'])) {
       $passwordErr = 'Senha é obrigatória';
+      $password_confErr = 'Senha é obrigatória';
+    } elseif (passwordValidation($_POST['password'], $_POST['password_conf'])) {
+      $password = md5($_POST['password']);
+    } elseif ($_POST['password'] !== $_POST['password_conf']) {
+      $passwordErr = 'Senhas não são iguais';
+      $password_confErr = 'Senhas não são iguais';
     } else {
-      $password = $_POST['password'];
-    }
-
-    if (empty($_POST['password_conf'])) {
-      $password_confErr = 'Confirmação de Senha é obrigatória';
-    } else {
-      $password_conf = $_POST['password_conf'];
-    }
-
-    if ($_POST['password'] && $_POST['password_conf']) {
-      if ($_POST['password'] !== $_POST['password_conf']) {
-        $password_confErr = 'Senhas não são iguais';
-      }
+      $passwordErr = 'Senha inválida';
+      $password_confErr = 'Senha inválida';
     }
 
     if (empty($_POST['name'])) {
       $nameErr = 'Nome é obrigatório';
-    } else {
+    } elseif (nameValidation($_POST['name'])) {
       $name = $_POST['name'];
+    } else {
+      $nameErr = 'Nome inválido';
     }
 
     if (empty($_POST['gender'])) {
@@ -40,16 +61,29 @@
       $gender = $_POST['gender'];
     }
 
+    if (empty($_POST['cpf'])) {
+      $cpfErr = 'Nascimento é obrigatório';
+    } elseif(is_numeric($_POST['cpf']) && strlen($_POST['cpf']) === 11) {
+      $cpf = $_POST['cpf'];
+    } else {
+      $cpfErr = 'CPF inválido';
+    }
+
     if (empty($_POST['birth'])) {
       $birthErr = 'Nascimento é obrigatório';
     } else {
-      $birth = $_POST['birth'];
+      if (list($y, $m, $d) = explode('-', $_POST['birth'])) {
+        $birth = $_POST['birth'];
+        echo $birth;
+      }
     }
-
+    
     if (empty($_POST['phone'])) {
-      $phoneErr = 'Telefone é obrigatório';
-    } else {
+      $phoneErr = 'Nascimento é obrigatório';
+    } elseif(is_numeric($_POST['phone']) && (strlen($_POST['phone']) >= 10 && strlen($_POST['phone']) <= 11)) {
       $phone = $_POST['phone'];
+    } else {
+      $phoneErr = 'Telefone inválido';
     }
   }
 ?>
