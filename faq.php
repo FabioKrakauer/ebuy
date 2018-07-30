@@ -43,7 +43,7 @@
 				<hr>
 				<div class="faq">
 				<p class="faq-title">Como faço para receber as novidades?</p>
-				<p class="faq-text">Basta cadastrar em nosso site e pronto, você já receberá as novidades da nossa linha de produtos</p>
+				<p class="faq-text">Basta cadastrar em nosso site e pronto, você já receberá as novidades da nossa linha de produtos.</p>
 				</div>
 			</div>
 			<div class="flex-articles-line">
