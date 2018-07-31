@@ -60,7 +60,7 @@
               <input class="option-input" type="radio" name="gender" value="female"><label for="gender">Feminino</label>
             </div>
             <div class="radio-option">
-              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Other</label>
+              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Outro</label>
             </div>
           </div>
         </div>
