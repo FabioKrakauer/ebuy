@@ -1,5 +1,5 @@
 <?php
-
+  //FUNÇÕES
   function isPartUppercase($string) {
     return (bool) preg_match('/[A-Z]/', $string);
   }
@@ -22,10 +22,21 @@
     return false;
   }
 
+  function validateDate($date, $format = 'Y-m-d') {
+    $d = DateTime::createFromFormat($format, $date);
+    // The Y ( 4 digits year ) returns TRUE for any integer with any number of digits so changing the comparison from == to === fixes the issue.
+    return $d && $d->format($format) === $date;
+  }
+
+  //CÓDIGO
   $email = $password = $password_conf = $name = $gender = $cpf = $birth = $phone = '';
   $emailErr = $passwordErr = $password_confErr = $nameErr = $genderErr = $cpfErr = $birthErr = $phoneErr = '';
 
+  //SE POST
   if ($_POST) {
+
+    // var_dump($_POST['birth']);
+
     if (empty($_POST['email'])) {
       $emailErr = 'E-mail é obrigatório';
     } elseif (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -62,7 +73,7 @@
     }
 
     if (empty($_POST['cpf'])) {
-      $cpfErr = 'Nascimento é obrigatório';
+      $cpfErr = 'CPF obrigatório';
     } elseif(is_numeric($_POST['cpf']) && strlen($_POST['cpf']) === 11) {
       $cpf = $_POST['cpf'];
     } else {
@@ -70,16 +81,17 @@
     }
 
     if (empty($_POST['birth'])) {
-      $birthErr = 'Nascimento é obrigatório';
+      $birthErr = 'Data obrigatória';
     } else {
-      if (list($y, $m, $d) = explode('-', $_POST['birth'])) {
+      if (validateDate($_POST['birth'])) {
         $birth = $_POST['birth'];
-        echo $birth;
+      } else {
+        $birthErr = 'Data inválida';
       }
     }
-    
+
     if (empty($_POST['phone'])) {
-      $phoneErr = 'Nascimento é obrigatório';
+      $phoneErr = 'Telefone é obrigatório';
     } elseif(is_numeric($_POST['phone']) && (strlen($_POST['phone']) >= 10 && strlen($_POST['phone']) <= 11)) {
       $phone = $_POST['phone'];
     } else {
