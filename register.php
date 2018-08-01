@@ -36,6 +36,13 @@
     }
   }
 
+  function mantemSexo() {
+    if (condition) {
+      // code...
+    }
+    echo "checked";
+  }
+
   //CÓDIGO
   $email = $password = $password_conf = $name = $gender = $cpf = $birth = $phone = '';
   $emailErr = $passwordErr = $password_confErr = $nameErr = $genderErr = $cpfErr = $birthErr = $phoneErr = '';
@@ -163,13 +170,13 @@
           <label class="item-label" for="name">Sexo: <span class="item-span">* <?= $genderErr ?></span></label>
           <div class="item-radio">
             <div class="radio-option">
-              <input class="option-input" type="radio" name="gender" value="male"><label for="gender">Masculino</label>
+              <input class="option-input" type="radio" name="gender" value="male" <?= (isset($_POST['gender']) && $_POST['gender'] === 'male')?'checked':'' ?>><label for="gender">Masculino</label>
             </div>
             <div class="radio-option">
-              <input class="option-input" type="radio" name="gender" value="female"><label for="gender">Feminino</label>
+              <input class="option-input" type="radio" name="gender" value="female" <?= (isset($_POST['gender']) && $_POST['gender'] === 'female')?'checked':'' ?>><label for="gender">Feminino</label>
             </div>
             <div class="radio-option">
-              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Other</label>
+              <input class="option-input" type="radio" name="gender" value="other" <?= (isset($_POST['gender']) && $_POST['gender'] === 'other')?'checked':'' ?>><label for="gender">Outro</label>
             </div>
           </div>
         </div>
