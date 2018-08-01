@@ -28,14 +28,20 @@
     return $d && $d->format($format) === $date;
   }
 
+  function mantemInput($erro, $dado) {
+    if ($_POST) {
+      if ($erro === '') {
+        echo $_POST[$dado];
+      }
+    }
+  }
+
   //CÓDIGO
   $email = $password = $password_conf = $name = $gender = $cpf = $birth = $phone = '';
   $emailErr = $passwordErr = $password_confErr = $nameErr = $genderErr = $cpfErr = $birthErr = $phoneErr = '';
 
   //SE POST
   if ($_POST) {
-
-    // var_dump($_POST['birth']);
 
     if (empty($_POST['email'])) {
       $emailErr = 'E-mail é obrigatório';
@@ -139,7 +145,7 @@
       <form class="flex-form" method="post">
         <div class="flex-form-item">
           <label class="item-label" for="email">E-mail: <span class="item-span">* <?= $emailErr ?></span></label>
-          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail">
+          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" value="<?php mantemInput($emailErr, 'email') ?>">
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="password">Senha: <span class="item-span">* <?= $passwordErr ?></span></label>
@@ -151,7 +157,7 @@
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Nome completo: <span class="item-span">* <?= $nameErr ?></span></label>
-          <input class="item-input" type="name" name="name" placeholder="Digite seu nome completo" >
+          <input class="item-input" type="name" name="name" placeholder="Digite seu nome completo" value="<?php mantemInput($nameErr, 'name') ?>">
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Sexo: <span class="item-span">* <?= $genderErr ?></span></label>
@@ -169,15 +175,15 @@
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">CPF: <span class="item-span">* <?= $cpfErr ?></span></label>
-          <input class="item-input" type="number" name="cpf" placeholder="___.___.___-__" >
+          <input class="item-input" type="number" name="cpf" placeholder="___.___.___-__" value="<?php mantemInput($cpfErr, 'cpf') ?>" >
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Data de Nascimento: <span class="item-span">* <?= $birthErr ?></span></label>
-          <input class="item-input" type="date" name="birth" placeholder="" >
+          <input class="item-input" type="date" name="birth" placeholder="" value="<?php mantemInput($birthErr, 'birth') ?>">
         </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Telefone de Contato: <span class="item-span">* <?= $phoneErr ?></span></label>
-          <input class="item-input" type="name" name="phone" placeholder="(__)_____-____" >
+          <input class="item-input" type="number" name="phone" placeholder="(__)_____-____" value="<?php mantemInput($phoneErr, 'phone') ?>">
         </div>
         <input class="btn-register" type="submit" name="register" value="Cadastrar">
       </form>
