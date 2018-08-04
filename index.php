@@ -8,6 +8,9 @@
     <title>Home</title>
   </head>
   <body>
+      <?php
+        require("Funset.php");
+      ?>
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
