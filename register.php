@@ -9,6 +9,13 @@
     <title>Cadastro</title>
   </head>
   <body>
+    <?php 
+    require("Funset.php"); 
+      if(existsSession("login")){
+        header("Location: profile.php");
+      }
+
+     ?>
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>

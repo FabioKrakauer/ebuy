@@ -9,6 +9,12 @@
     <title>Login</title>
   </head>
   <body>
+    <?php 
+      require("Funset.php");
+      if(!existsSession("login")){
+        header("Location: login.php");
+      }
+     ?>
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>

@@ -10,8 +10,12 @@
   </head>
   <body>
     <?php
-    session_start();
+    require("Funset.php");
+    if(existsSession("login")){
+      header("Location: profile.php");
+    }
      ?>
+    
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
@@ -23,7 +27,6 @@
             <li class="nav-li">
               <a class="nav-a" href="index.php">Home</a>
             </li>
-
             <li class="nav-li">
               <a class="nav-a" href="login.php">Login</a>
             </li>
