@@ -50,33 +50,20 @@
   //SE POST
   if ($_POST) {
 
-    if (empty($_POST['email'])) {
-      $emailErr = 'E-mail é obrigatório';
-    } elseif (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-      $email = $_POST['email'];
-    } else {
-      $emailErr = 'E-mail inválido';
-    }
-
-    if (empty($_POST['password'])) {
-      $passwordErr = 'Senha é obrigatória';
-      $password_confErr = 'Senha é obrigatória';
-    } elseif (passwordValidation($_POST['password'], $_POST['password_conf'])) {
-      $password = md5($_POST['password']);
-    } elseif ($_POST['password'] !== $_POST['password_conf']) {
-      $passwordErr = 'Senhas não são iguais';
-      $password_confErr = 'Senhas não são iguais';
-    } else {
-      $passwordErr = 'Senha inválida';
-      $password_confErr = 'Senha inválida';
-    }
-
     if (empty($_POST['name'])) {
       $nameErr = 'Nome é obrigatório';
     } elseif (nameValidation($_POST['name'])) {
       $name = $_POST['name'];
     } else {
       $nameErr = 'Nome inválido';
+    }
+
+    if (empty($_POST['email'])) {
+      $emailErr = 'E-mail é obrigatório';
+    } elseif (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $email = $_POST['email'];
+    } else {
+      $emailErr = 'E-mail inválido';
     }
 
     if (empty($_POST['gender'])) {
@@ -109,6 +96,19 @@
       $phone = $_POST['phone'];
     } else {
       $phoneErr = 'Telefone inválido';
+    }
+
+    if (empty($_POST['password'])) {
+      $passwordErr = 'Senha é obrigatória';
+      $password_confErr = 'Senha é obrigatória';
+    } elseif (passwordValidation($_POST['password'], $_POST['password_conf'])) {
+      $password = md5($_POST['password']);
+    } elseif ($_POST['password'] !== $_POST['password_conf']) {
+      $passwordErr = 'Senhas não são iguais';
+      $password_confErr = 'Senhas não são iguais';
+    } else {
+      $passwordErr = 'Senha inválida';
+      $password_confErr = 'Senha inválida';
     }
   }
 ?>
@@ -151,23 +151,15 @@
     <div class="flex-container">
       <form class="flex-form" method="post">
         <div class="flex-form-item">
-          <label class="item-label" for="email">E-mail: <span class="item-span">* <?= $emailErr ?></span></label>
-          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" value="<?php mantemInput($emailErr, 'email') ?>">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="password">Senha: <span class="item-span">* <?= $passwordErr ?></span></label>
-          <input class="item-input" type="password" name="password" placeholder="Digite sua senha">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="password_conf">Confirme sua senha: <span class="item-span">* <?= $password_confErr ?></span></label>
-          <input class="item-input" type="password" name="password_conf" placeholder="Confirme sua senha">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">Nome completo: <span class="item-span">* <?= $nameErr ?></span></label>
+          <label class="item-label" for="name">Nome completo <span class="item-span">* <?= $nameErr ?></span></label>
           <input class="item-input" type="name" name="name" placeholder="Digite seu nome completo" value="<?php mantemInput($nameErr, 'name') ?>">
         </div>
         <div class="flex-form-item">
-          <label class="item-label" for="name">Sexo: <span class="item-span">* <?= $genderErr ?></span></label>
+          <label class="item-label" for="email">E-mail <span class="item-span">* <?= $emailErr ?></span></label>
+          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" value="<?php mantemInput($emailErr, 'email') ?>">
+        </div>
+                <div class="flex-form-item">
+          <label class="item-label" for="name">Sexo <span class="item-span">* <?= $genderErr ?></span></label>
           <div class="item-radio">
             <div class="radio-option">
               <input class="option-input" type="radio" name="gender" value="male" <?= (isset($_POST['gender']) && $_POST['gender'] === 'male')?'checked':'' ?>><label for="gender">Masculino</label>
@@ -181,16 +173,24 @@
           </div>
         </div>
         <div class="flex-form-item">
-          <label class="item-label" for="name">CPF: <span class="item-span">* <?= $cpfErr ?></span></label>
+          <label class="item-label" for="name">CPF <span class="item-span">* <?= $cpfErr ?></span></label>
           <input class="item-input" type="number" name="cpf" placeholder="___.___.___-__" value="<?php mantemInput($cpfErr, 'cpf') ?>" >
         </div>
         <div class="flex-form-item">
-          <label class="item-label" for="name">Data de Nascimento: <span class="item-span">* <?= $birthErr ?></span></label>
+          <label class="item-label" for="name">Data de Nascimento <span class="item-span">* <?= $birthErr ?></span></label>
           <input class="item-input" type="date" name="birth" placeholder="" value="<?php mantemInput($birthErr, 'birth') ?>">
         </div>
         <div class="flex-form-item">
-          <label class="item-label" for="name">Telefone de Contato: <span class="item-span">* <?= $phoneErr ?></span></label>
+          <label class="item-label" for="name">Telefone de Contato <span class="item-span">* <?= $phoneErr ?></span></label>
           <input class="item-input" type="number" name="phone" placeholder="(__)_____-____" value="<?php mantemInput($phoneErr, 'phone') ?>">
+        </div>
+        <div class="flex-form-item">
+          <label class="item-label" for="password">Senha <span class="item-span">* <?= $passwordErr ?></span></label>
+          <input class="item-input" type="password" name="password" placeholder="Digite sua senha">
+        </div>
+        <div class="flex-form-item">
+          <label class="item-label" for="password_conf">Confirme sua senha <span class="item-span">* <?= $password_confErr ?></span></label>
+          <input class="item-input" type="password" name="password_conf" placeholder="Confirme sua senha">
         </div>
         <input class="btn-register" type="submit" name="register" value="Cadastrar">
       </form>
