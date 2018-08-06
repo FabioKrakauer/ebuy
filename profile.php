@@ -38,10 +38,8 @@
           </ul>
         </div>
     </header>
-      <div class="flex-container">
-        <form action="logout.php" class="flex-form">
-          <input type="submit" class="item-input btn-login" name="btn" value="Deslogar">        
-        </form>
+    <div class="flex-container">
+      
       <footer class="footer">
         Copyright 2018 - Todos os direitos reservados -
       </footer>
