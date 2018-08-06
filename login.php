@@ -29,6 +29,9 @@
             <li class="nav-li">
               <a class="nav-a" href="faq.php">FAQ</a>
             </li>
+            <li class="nav-li">
+              <a class="nav-a" href="logout.php">Deslogar</a>
+            </li>
           </ul>
         </div>
     </header>
@@ -48,6 +51,18 @@
           ?>
       </div>
       <?php } ?>
+      <!-- Verifica qual  usuário está logado -->
+      <div>
+        <?php
+          session_start(); 
+          if(isset($_SESSION["logged"])){
+            echo "usuário já logado: " . $_SESSION["logged"]["user"];
+          }
+          else {
+            echo "nenhum usuário logado";
+          }        
+        ?>
+      </div>
     <form action="loginverify.php" class="flex-form" method="post">
         <div class="flex-form-item">
           <label class="form-label">E-mail ou usuário*</label>

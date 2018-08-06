@@ -10,10 +10,18 @@
    			if(!isset($_SESSION["logged"])){
    				$login = array("user"=>$user,"pass"=>$pass);
    				$_SESSION["logged"] = $login;
-   			}			
+   			}		
    		}
-   		session_start();
-   		echo "Seja bem vindo, $user";
+         session_start();
+         $login = array("user"=>$user,"pass"=>$pass);
+         $_SESSION["logged"] = $login;
+         if(isset($_SESSION["logged"])){ 
+            echo "você já está logado";     
+         } else {
+            //session_start();
+            echo "Seja bem vindo, $user";   
+         }
+
    		// header("Location: profile.php");
    	}else{
    		header("Location: login.php?error=2");
