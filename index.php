@@ -8,6 +8,15 @@
     <title>Home</title>
   </head>
   <body>
+      <?php
+        require("Funset.php");
+        if(!existsSession("login")){
+          if(existsCookie("savelogin")){
+            $getInfo = json_decode($_COOKIE["savelogin"], true);
+            createSession("login", $getInfo);
+          }
+        }
+      ?>
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
@@ -19,12 +28,24 @@
             <li class="nav-li">
               <a class="nav-a" href="index.php">Home</a>
             </li>
+            <?php 
+              if(existsSession("login")){ 
+                ?>
+                <li class="nav-li">
+              <a class="nav-a" href="profile.php">Perfil</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="logout.php">Deslogar</a>
+            </li>
+        <?php }else{
+         ?>
             <li class="nav-li">
               <a class="nav-a" href="login.php">Login</a>
             </li>
             <li class="nav-li">
               <a class="nav-a" href="register.php">Cadastro</a>
             </li>
+<?php } ?>
             <li class="nav-li">
               <a class="nav-a" href="faq.php">FAQ</a>
             </li>

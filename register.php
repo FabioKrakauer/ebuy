@@ -9,6 +9,13 @@
     <title>Cadastro</title>
   </head>
   <body>
+    <?php 
+    require("Funset.php"); 
+      if(existsSession("login")){
+        header("Location: profile.php");
+      }
+
+     ?>
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
@@ -60,7 +67,7 @@
               <input class="option-input" type="radio" name="gender" value="female"><label for="gender">Feminino</label>
             </div>
             <div class="radio-option">
-              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Other</label>
+              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Outro</label>
             </div>
           </div>
         </div>

@@ -132,12 +132,12 @@
 	  	justify-content: center;
 	  	margin-bottom: 14px;
 	}
-.form-label{
+.item-label{
 	  	margin-bottom: 10px;
 			font-size: 1.1em;
 	  }
 
-	  .form-input{
+	  .item-input{
 	  	width: 100%;
 	  	box-sizing: border-box;
 	  	text-align: left;
@@ -149,7 +149,7 @@
   	display: flex;
   	flex-direction: row;
   } */
-  .btn-submit{
+  .btn-login{
   	background-color: chocolate;
   	border: 2px solid chocolate;
   	color: #fff;
@@ -194,7 +194,7 @@
 	color: #639eff;
 } */
 
-.btn-submit{
+.btn-login{
 	background-color: chocolate;
 	border: 2px solid chocolate;
 	color: #fff;
