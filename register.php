@@ -125,8 +125,8 @@
     <title>Cadastro</title>
   </head>
   <body>
-    <?php 
-    require("Funset.php"); 
+    <?php
+    require("Funset.php");
       if(existsSession("login")){
         header("Location: profile.php");
       }
@@ -188,11 +188,7 @@
               <input class="option-input" type="radio" name="gender" value="female" <?= (isset($_POST['gender']) && $_POST['gender'] === 'female')?'checked':'' ?>><label for="gender">Feminino</label>
             </div>
             <div class="radio-option">
-<<<<<<< HEAD
-              <input class="option-input" type="radio" name="gender" value="other"><label for="gender">Outro</label>
-=======
               <input class="option-input" type="radio" name="gender" value="other" <?= (isset($_POST['gender']) && $_POST['gender'] === 'other')?'checked':'' ?>><label for="gender">Outro</label>
->>>>>>> 630dbd0bd87b11d76cbf1812c2e67fa5e264ba28
             </div>
           </div>
         </div>
