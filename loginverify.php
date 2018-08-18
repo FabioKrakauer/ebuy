@@ -1,4 +1,4 @@
-<?php 
+<?php
    $user = $_POST["email"];
    $pass = $_POST["password"];
 
@@ -10,7 +10,7 @@
    			if(!isset($_SESSION["logged"])){
    				$login = array("user"=>$user,"pass"=>$pass);
    				$_SESSION["logged"] = $login;
-   			}else{   				
+   			}else{
    		}
    		echo "Seja bem vindo, ".$_SESSION["logged"]["user"];
    		// header("Location: profile.php");
@@ -20,5 +20,5 @@
    }else{
    		header("Location: login.php?error=1");
    }
-
+}
  ?>
