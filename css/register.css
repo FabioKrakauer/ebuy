@@ -106,7 +106,7 @@
   margin-bottom: 14px;
 }
 
-/!--Andre--/
+<!-- André -->
 .caixa{
  width: 25%;
 }
@@ -136,6 +136,11 @@
 
 .item-label{
   font-size: 1.1em;
+}
+
+.item-span{
+	color: red;
+	font-size: 0.6em;
 }
 
 .item-input{
