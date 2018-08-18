@@ -9,7 +9,11 @@
     <title>Login</title>
   </head>
   <body>
+<<<<<<< HEAD
     <?php 
+=======
+    <?php
+>>>>>>> 23bd44cfb89d84228f6645a5b681ff0eb7ac2e8f
       require("Funset.php");
       if(!existsSession("login")){
         header("Location: login.php");
@@ -39,7 +43,11 @@
         </div>
     </header>
     <div class="flex-container">
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> 23bd44cfb89d84228f6645a5b681ff0eb7ac2e8f
       <footer class="footer">
         Copyright 2018 - Todos os direitos reservados -
       </footer>

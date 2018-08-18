@@ -158,18 +158,20 @@
     <div class="flex-container">
       <form class="flex-form">
         <div class="caixa">
-            <div class="caixa-interna">
-              <div class="caixa-texto">
-                <h5>Sua foto de perfil</h5>
-              </div>
-              <img src="images/rosto.png" width="110" height="110" alt="avatar"
-              class="img-avatar">
+          <div class="caixa-interna">
+            <div class="caixa-texto">
+              <h5>Sua foto de perfil</h5>
             </div>
+            <img src="images/rosto.png" width="110" height="110" alt="avatar" class="img-avatar">
+          </div>
         </div>
         <div class="botao">
            <input type="file" name="botao" value="Alterar Foto" class="btn">
         </div>
-      <form class="flex-form" method="post">
+        <div class="flex-form-item">
+          <label class="item-label" for="email">E-mail: <span class="item-span">*</span></label>
+          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" >
+        </div>
         <div class="flex-form-item">
           <label class="item-label" for="name">Nome completo <span class="item-span">* <?= $nameErr ?></span></label>
           <input class="item-input" type="name" name="name" placeholder="Digite seu nome completo" value="<?php mantemInput($nameErr, 'name') ?>">
@@ -178,7 +180,7 @@
           <label class="item-label" for="email">E-mail <span class="item-span">* <?= $emailErr ?></span></label>
           <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" value="<?php mantemInput($emailErr, 'email') ?>">
         </div>
-                <div class="flex-form-item">
+        <div class="flex-form-item">
           <label class="item-label" for="name">Sexo <span class="item-span">* <?= $genderErr ?></span></label>
           <div class="item-radio">
             <div class="radio-option">
