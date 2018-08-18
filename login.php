@@ -37,6 +37,9 @@
             <li class="nav-li">
               <a class="nav-a" href="faq.php">FAQ</a>
             </li>
+            <li class="nav-li">
+              <a class="nav-a" href="logout.php">Deslogar</a>
+            </li>
           </ul>
         </div>
     </header>

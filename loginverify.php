@@ -2,12 +2,14 @@
    $user = $_POST["email"];
    $pass = $_POST["password"];
    require("Funset.php");
+
    function verifyUser($user){
       return $user === "admin";
    }
    function verifyLogin($user, $pass){
       return verifyUser($user) && $pass === "ebuy";
    }
+   
    if(verifyLogin($user, $pass)){
       if(!empty($_POST["remember"])){
          // Salva senha no cookie
