@@ -1,0 +1,22 @@
+.caixa{
+ width: 25%;
+}
+
+.caixa-interna{
+ text-align: center;
+ color: #4a4a4a;
+ border-color: #ddd;
+ border: 1px solid;
+}
+
+.caixa-texto{
+  font-weight: 400;
+  background-color: transparent;
+  padding-bottom: 0;
+  padding: 10px 15px;
+}
+
+.btn{
+  margin-top: 20px;
+  text-align: center
+}

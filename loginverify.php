@@ -1,4 +1,4 @@
-<?php 
+<?php
    $user = $_POST["email"];
    $pass = $_POST["password"];
    require("Funset.php");
