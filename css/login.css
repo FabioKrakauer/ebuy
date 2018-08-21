@@ -94,71 +94,15 @@
 	height: calc(100vh - 70px);
 }
 
-/* .flex-form{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	margin-top: 10px;
-	width: 100%;
-} */
-
-.flex-error{
-	display: flex;
-	background-color: #fc2525;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	color: white;
-	font-family: 'Georgia', sans-serif;
-	border-radius: 10px;
-    padding: 20px;
-	justify-content: center;
-	border: transparent solid 3px;
-
-}
-.flex-error:hover{
-	border: #cc1a1a solid 3px;
-}
 .flex-form{
   display: flex;
   flex-direction: column;
   width: 90%;
   box-sizing: border-box;
-  height: calc(100vh - 85px);
+	height: calc(100vh - 85px);
 }
+
 .flex-form-item{
-		display: flex;
-	  	width: 100%;
-	  	flex-direction: column;
-	  	justify-content: center;
-	  	margin-bottom: 14px;
-	}
-.form-label{
-	  	margin-bottom: 10px;
-			font-size: 1.1em;
-	  }
-
-	  .form-input{
-	  	width: 100%;
-	  	box-sizing: border-box;
-	  	text-align: left;
-	  	height: 5vh;
-	  }
-
-	/* Comentei pois não existe classe="flex-row" no html. */
-  /* .flex-row
-  	display: flex;
-  	flex-direction: row;
-  } */
-  .btn-submit{
-  	background-color: chocolate;
-  	border: 2px solid chocolate;
-  	color: #fff;
-  	height: 7vh;
-  	text-align: center;
-  	cursor: pointer;
-	margin-top: 10px;
-}
-   .flex-form-item{
 	display: flex;
 	width: 100%;
 	flex-direction: column;
