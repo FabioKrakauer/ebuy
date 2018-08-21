@@ -9,7 +9,7 @@
     <title>Login</title>
   </head>
   <body>
-    <?php 
+    <?php
       require("Funset.php");
       if(!existsSession("login")){
         header("Location: login.php");
@@ -39,7 +39,7 @@
         </div>
     </header>
     <div class="flex-container">
-      
+
       <footer class="footer">
         Copyright 2018 - Todos os direitos reservados -
       </footer>

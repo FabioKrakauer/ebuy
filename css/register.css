@@ -106,7 +106,8 @@
   margin-bottom: 14px;
 }
 
-/!--Andre--/
+<<<<<<< HEAD
+<!-- André -->
 .caixa{
  width: 25%;
 }
@@ -134,8 +135,15 @@
 	margin-top: 40px;
 }
 
+=======
+>>>>>>> parent of 8996195... upload-foto e modelo de dados
 .item-label{
   font-size: 1.1em;
+}
+
+.item-span{
+	color: red;
+	font-size: 0.6em;
 }
 
 .item-input{
