@@ -9,6 +9,13 @@
     <title>Login</title>
   </head>
   <body>
+    <?php
+    require("Funset.php");
+    if(existsSession("login")){
+      header("Location: profile.php");
+    }
+     ?>
+    
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
@@ -51,6 +58,7 @@
     <form action="loginverify.php" class="flex-form" method="post">
         <div class="flex-form-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <label class="form-label">E-mail ou usuário*</label>
           <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
@@ -66,13 +74,21 @@
           <input class="item-input" type="password" name="email" placeholder="Digite sua senha!">
 >>>>>>> bedca4d32626816955299fb5b980a61ef8054674
         </div>
+=======
+          <label class="item-label">E-mail ou usuário*</label>
+          <input class="item-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
+        </div>
+        <div class="flex-form-item">
+          <label class="item-label">Senha*</label>
+          <input class="item-input" type="password" name="password" placeholder="Digite sua senha!">
+>>>>>>> 3a86f6770d00bf32c287b7a0ef016ab4dc0e96d0
         <div class="flex-form-option">
           <div class="option-remember">
-            <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
+            <input type="checkbox" name="remember" value="remeber_pass"><label>Lembrar senha!</label>
           </div>
           <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
         </div>
-        <input type="submit" class="item-input btn-submit" name="btn" value="Logar">
+        <input type="submit" class="item-input btn-login" name="btn" value="Logar">
       </form>
       <footer class="footer">
         Copyright 2018 - Todos os direitos reservados -
