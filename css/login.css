@@ -103,6 +103,43 @@
 }
 
 .flex-form-item{
+<<<<<<< HEAD
+=======
+
+		display: flex;
+	  	width: 100%;
+	  	flex-direction: column;
+	  	justify-content: center;
+	  	margin-bottom: 14px;
+	}
+.form-label{
+	  	margin-bottom: 10px;
+			font-size: 1.1em;
+	  }
+
+	  .form-input{
+	  	width: 100%;
+	  	box-sizing: border-box;
+	  	text-align: left;
+	  	height: 5vh;
+	  }
+
+	/* Comentei pois não existe classe="flex-row" no html. */
+  /* .flex-row
+  	display: flex;
+  	flex-direction: row;
+  } */
+  .btn-submit{
+  	background-color: chocolate;
+  	border: 2px solid chocolate;
+  	color: #fff;
+  	height: 7vh;
+  	text-align: center;
+  	cursor: pointer;
+	margin-top: 10px;
+}
+   .flex-form-item{
+>>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
 	display: flex;
 	width: 100%;
 	flex-direction: column;
@@ -138,7 +175,7 @@
 	color: #639eff;
 } */
 
-.btn-submit{
+.btn-login{
 	background-color: chocolate;
 	border: 2px solid chocolate;
 	color: #fff;

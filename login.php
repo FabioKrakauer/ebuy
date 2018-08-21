@@ -9,6 +9,13 @@
     <title>Login</title>
   </head>
   <body>
+    <?php
+    require("Funset.php");
+    if(existsSession("login")){
+      header("Location: profile.php");
+    }
+     ?>
+
     <header class="flex-header">
         <label class="header-logo">
           <a class="logo-a" href="index.php">E-Buy</a>
@@ -57,22 +64,37 @@
         <div class="flex-form-item">
           <label class="form-label">Senha*</label>
           <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
           <label class="item-label">E-mail ou usuário*</label>
           <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail ou usuario!">
         </div>
         <div class="flex-form-item">
           <label class="item-label">Senha*</label>
           <input class="item-input" type="password" name="email" placeholder="Digite sua senha!">
+<<<<<<< HEAD
 >>>>>>> bedca4d32626816955299fb5b980a61ef8054674
         </div>
+=======
+        </div>
+=======
+          <label class="item-label">E-mail ou usuário*</label>
+          <input class="item-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
+        </div>
+        <div class="flex-form-item">
+          <label class="item-label">Senha*</label>
+          <input class="item-input" type="password" name="password" placeholder="Digite sua senha!">
+
+>>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
         <div class="flex-form-option">
           <div class="option-remember">
-            <input type="checkbox" name="remeber" value="remeber_pass"><label>Lembrar senha!</label>
+            <input type="checkbox" name="remember" value="remeber_pass"><label>Lembrar senha!</label>
           </div>
           <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
         </div>
-        <input type="submit" class="item-input btn-submit" name="btn" value="Logar">
+        <input type="submit" class="item-input btn-login" name="btn" value="Logar">
       </form>
       <footer class="footer">
         Copyright 2018 - Todos os direitos reservados -
