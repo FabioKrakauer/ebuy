@@ -157,6 +157,26 @@
     </header>
     <div class="flex-container">
       <form class="flex-form">
+
+        <!--André-->
+<<<<<<< HEAD
+        <div class="flex-form-foto">
+            <div class="flex-form-item">
+              <div class="caixa-texto">
+                <h5>Sua foto de perfil</h5>
+              </div>
+              <div class="caixa-img">
+                <img src="images/rosto.png" width="110" height="110" alt="avatar"
+                class="img-avatar">
+              </div>
+              <div class="caixa-botao">
+                 <input type="file" name="botao" value="Alterar Foto" class="btn">
+              </div>
+            </div>
+        </div>
+        <!--André-->
+
+=======
         <div class="caixa">
           <div class="caixa-interna">
             <div class="caixa-texto">
@@ -168,6 +188,7 @@
         <div class="botao">
            <input type="file" name="botao" value="Alterar Foto" class="btn">
         </div>
+
         <div class="flex-form-item">
           <label class="item-label" for="email">E-mail: <span class="item-span">*</span></label>
           <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" >

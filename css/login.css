@@ -126,6 +126,12 @@
   height: calc(100vh - 85px);
 }
 .flex-form-item{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff26a0f881c06fe4ae6f91065b3b5deee013de12
 		display: flex;
 	  	width: 100%;
 	  	flex-direction: column;
@@ -137,7 +143,7 @@
 			font-size: 1.1em;
 	  }
 
-	  .item-input{
+	  .form-input{
 	  	width: 100%;
 	  	box-sizing: border-box;
 	  	text-align: left;
@@ -149,7 +155,7 @@
   	display: flex;
   	flex-direction: row;
   } */
-  .btn-login{
+  .btn-submit{
   	background-color: chocolate;
   	border: 2px solid chocolate;
   	color: #fff;
@@ -159,6 +165,10 @@
 	margin-top: 10px;
 }
    .flex-form-item{
+<<<<<<< HEAD
+=======
+>>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
+>>>>>>> ff26a0f881c06fe4ae6f91065b3b5deee013de12
 	display: flex;
 	width: 100%;
 	flex-direction: column;
