@@ -1,0 +1,184 @@
+/* HEADER */
+.flex-header{
+	background-color: chocolate;
+	width: 100vw;
+	height: 60px ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-right: 5%;
+	padding-left: 5%;
+	position: fixed;
+	top: 0;
+}
+
+.header-logo{
+	font-family: 'Georgia', sans-serif;
+	font-style: italic;
+	color: black;
+	font-size: 30px;
+}
+
+.logo-a{
+	text-decoration: none;
+	color: black;
+}
+
+.toggle-menu-icon{
+	height: 30px;
+	width: 35px;
+}
+
+#toggle-menu{
+	display: none;
+}
+
+#toggle-menu:checked + .navigation{
+	display: block;
+	position: fixed;
+	top: 60px;
+	height: calc(100vh - 60px);
+	background-color: #3d2418;
+	width: 100%;
+	left: 0;
+	overflow-y: auto;
+	opacity: 1;
+	visibility: visible;
+}
+
+.navigation{
+	display: none;
+}
+
+.nav-ul{
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	justify-content: space-around;
+	height: calc(100vh - 60px);
+}
+
+.nav-li{
+	display: flex;
+	justify-content: center;
+}
+
+.nav-a{
+	text-decoration: none;
+	color: chocolate;
+	cursor: pointer;
+	border-bottom: transparent solid 5px;
+	font-size: 21px;
+}
+
+.nav-a:hover{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	border-bottom: #003791 solid 3px;
+}
+
+/* CONTAINER */
+.flex-container{
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  width: 100vw;
+  margin-top: 10px;
+  box-sizing: border-box;
+	position: absolute;
+	top: 60px;
+	z-index: -1;
+}
+
+.flex-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.flex-form-item{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+
+.caixa{
+ width: 25%;
+}
+
+.caixa-interna{
+ text-align: center;
+ color: #4a4a4a;
+ border-color: #ddd;
+ border: 1px solid;
+}
+
+.caixa-texto{
+  font-weight: 400;
+  background-color: transparent;
+  padding-bottom: 0;
+  padding: 10px 15px;
+}
+
+.btn{
+  margin-top: 20px;
+  text-align: center
+}
+
+.botao{
+	margin-top: 40px;
+}
+<<<<<<< HEAD
+>>>>>>> 1df6e6897b553f7d9fda2fccf33b081bb0faee8b
+
+=======
+
+=======
+>>>>>>> parent of 8996195... upload-foto e modelo de dados
+>>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
+.item-label{
+  font-size: 1.1em;
+}
+
+.item-span{
+	color: red;
+	font-size: 0.6em;
+}
+
+.item-input{
+  height: 5vh;
+  margin-top: 4px;
+}
+
+.item-radio{
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-input{
+  margin: 0;
+  margin-top: 7px;
+}
+
+.btn-register{
+  margin-bottom: 10px;
+  height: 7vh;
+  background-color: chocolate;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+}
+
+.footer{
+  margin-top: 10px;
+  background: chocolate;
+  color: black;
+  height:25px;
+  text-align: center;
+  padding: 10px;
+}
