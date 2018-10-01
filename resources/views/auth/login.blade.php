@@ -1,71 +1,66 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="flex-header">
+        <label class="header-logo">
+          <a class="logo-a" href="index.php">E-Buy</a>
+        </label>
+        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
+        <input type="checkbox" id="toggle-menu">
+        <div class="navigation">
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a class="nav-a" href="index.php">Home</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="login.php">Login</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="register.php">Cadastro</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="faq.php">FAQ</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="logout.php">Deslogar</a>
+            </li>
+          </ul>
         </div>
+    </header>
+    <div class="flex-container">
+      <div class="flex-error">
+      </div>
+    <form action="/login" class="flex-form" method="post">
+        @CSRF
+        {{METHOD_FIELD('POST')}}
+        <div class="flex-form-item">
+          <label class="form-label">E-mail ou usuário*</label>
+          <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
+        </div>
+        <div class="flex-form-item">
+          <label class="form-label">Senha*</label>
+          <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
+        </div>
+         
+        <div class="flex-form-option">
+          <div class="option-remember">
+            <input type="checkbox" name="remember" value="remeber"><label>Lembrar senha!</label>
+          </div>
+          <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
+        </div>
+        <input type="submit" class="item-input btn-login" name="btn" value="Logar">
+      </form>
+      <footer class="footer">
+        Copyright 2018 - Todos os direitos reservados -
+      </footer>
     </div>
-</div>
-@endsection
+  </body>
+</html>

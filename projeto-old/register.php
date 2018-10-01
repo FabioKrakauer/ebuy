@@ -158,8 +158,6 @@
     <div class="flex-container">
       <form class="flex-form">
 
-        <!--André-->
-<<<<<<< HEAD
         <div class="flex-form-foto">
             <div class="flex-form-item">
               <div class="caixa-texto">
@@ -174,9 +172,6 @@
               </div>
             </div>
         </div>
-        <!--André-->
-
-=======
         <div class="caixa">
           <div class="caixa-interna">
             <div class="caixa-texto">
