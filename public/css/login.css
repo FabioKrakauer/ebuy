@@ -1,225 +1,99 @@
-/* HEADER */
-.flex-header{
-	background-color: chocolate;
-	width: 100vw;
-	height: 60px ;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	box-sizing: border-box;
-	padding-right: 5%;
-	padding-left: 5%;
-	position: fixed;
-	top: 0;
-}
+:root {
+	--input-padding-x: 1.5rem;
+	--input-padding-y: .75rem;
+  }
 
-.header-logo{
-	font-family: 'Georgia', sans-serif;
-	font-style: italic;
-	color: black;
-	font-size: 30px;
-}
-
-.logo-a{
-	text-decoration: none;
-	color: black;
-}
-
-.toggle-menu-icon{
-	height: 30px;
-	width: 35px;
-}
-
-#toggle-menu{
-	display: none;
-}
-
-#toggle-menu:checked + .navigation{
-	display: block;
-	position: fixed;
-	top: 60px;
-	height: calc(100vh - 60px);
-	background-color: #3d2418;
+  .card-signin {
+	border: 0;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-signin .card-title {
+	margin-bottom: 2rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+  }
+  
+  .card-signin .card-body {
+	padding: 2rem;
+  }
+  
+  .form-signin {
 	width: 100%;
-	left: 0;
-	overflow-y: auto;
-	opacity: 1;
-	visibility: visible;
-}
+  }
+  
+  .form-signin .btn {
+	font-size: 80%;
+	border-radius: 5rem;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	padding: 1rem;
+	transition: all 0.2s;
+	background: #62008e;
+	color: #FFFFFF;
+  }
 
-.navigation{
-	display: none;
-}
-
-.nav-ul{
-	display: flex;
-	width: 100vw;
-	flex-direction: column;
-	justify-content: space-around;
-	height: calc(100vh - 60px);
-}
-
-.nav-li{
-	display: flex;
-	justify-content: center;
-}
-
-.nav-a{
-	text-decoration: none;
-	color: chocolate;
-	cursor: pointer;
-	border-bottom: transparent solid 5px;
-	font-size: 21px;
-}
-
-.nav-a:hover{
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
-	border-bottom: #003791 solid 3px;
-}
-
-/* CONTAINER */
-.flex-container{
-  display: flex;
-  justify-content: center;
-	flex-direction: column;
-	align-items: center;
-  width: 100vw;
-  margin-top: 10px;
-  box-sizing: border-box;
+  .form-signin a {
+	  font-size: 12px;
+  }
+  
+  .form-label-group {
+	position: relative;
+	margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+	border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+	padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
 	position: absolute;
-	top: 60px;
-	z-index: -1;
-	height: calc(100vh - 70px);
-}
-
-/* .flex-form{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	margin-top: 10px;
+	top: 0;
+	left: 0;
+	display: block;
 	width: 100%;
-} */
-
-.flex-error{
-	display: flex;
-	background-color: #fc2525;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	color: white;
-	font-family: 'Georgia', sans-serif;
-	border-radius: 10px;
-    padding: 20px;
-	justify-content: center;
-	border: transparent solid 3px;
-
-}
-.flex-error:hover{
-	border: #cc1a1a solid 3px;
-}
-.flex-form{
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  box-sizing: border-box;
-  height: calc(100vh - 85px);
-}
-.flex-form-item{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> ff26a0f881c06fe4ae6f91065b3b5deee013de12
-		display: flex;
-	  	width: 100%;
-	  	flex-direction: column;
-	  	justify-content: center;
-	  	margin-bottom: 14px;
-	}
-.form-label{
-	  	margin-bottom: 10px;
-			font-size: 1.1em;
-	  }
-
-	  .form-input{
-	  	width: 100%;
-	  	box-sizing: border-box;
-	  	text-align: left;
-	  	height: 5vh;
-	  }
-
-	/* Comentei pois não existe classe="flex-row" no html. */
-  /* .flex-row
-  	display: flex;
-  	flex-direction: row;
-  } */
-  .btn-submit{
-  	background-color: chocolate;
-  	border: 2px solid chocolate;
-  	color: #fff;
-  	height: 7vh;
-  	text-align: center;
-  	cursor: pointer;
-	margin-top: 10px;
-}
-   .flex-form-item{
-<<<<<<< HEAD
-=======
->>>>>>> 5b787a91e13ccba99687ac65840afb1481c741e2
->>>>>>> ff26a0f881c06fe4ae6f91065b3b5deee013de12
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-	margin-bottom: 14px;
-}
-
-.item-label{
-	margin-bottom: 10px;
-	font-size: 1.1em;
-}
-
-.item-input{
-	width: 100%;
-	box-sizing: border-box;
-	text-align: left;
-	height: 5vh;
-}
-
-.flex-form-option{
-	display: flex;
-	justify-content: space-between;
-}
-
-.option-forget{
-	display: flex;
-	align-items: flex-end;
-	text-decoration: none;
-	color: #2879fc;
-}
-
-/* .option-forget:hover{
-	color: #639eff;
-} */
-
-.btn-login{
-	background-color: chocolate;
-	border: 2px solid chocolate;
-	color: #fff;
-	height: 7vh;
-	text-align: center;
-	cursor: pointer;
-	margin-top: 15px;
-	border-radius: 8px;
-}
-
-.footer{
-  margin-top: 10px;
-  background: chocolate;
-  color: black;
-  height:25px;
-  text-align: center;
-  padding: 10px;
-}
+	margin-bottom: 0;
+	line-height: 1.5;
+	color: #495057;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+	padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+	padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+	padding-top: calc(var(--input-padding-y) / 3);
+	padding-bottom: calc(var(--input-padding-y) / 3);
+	font-size: 12px;
+	color: #777;
+  }

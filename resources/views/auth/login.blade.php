@@ -4,63 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
     <title>Login</title>
   </head>
   <body>
-    <header class="flex-header">
-        <label class="header-logo">
-          <a class="logo-a" href="index.php">E-Buy</a>
-        </label>
-        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
-        <input type="checkbox" id="toggle-menu">
-        <div class="navigation">
-          <ul class="nav-ul">
-            <li class="nav-li">
-              <a class="nav-a" href="index.php">Home</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="login.php">Login</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="register.php">Cadastro</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="faq.php">FAQ</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="logout.php">Deslogar</a>
-            </li>
-          </ul>
-        </div>
+    <header class="">
+
     </header>
-    <div class="flex-container">
-      <div class="flex-error">
-      </div>
-    <form action="/login" class="flex-form" method="post">
-        @CSRF
-        {{METHOD_FIELD('POST')}}
-        <div class="flex-form-item">
-          <label class="form-label">E-mail ou usuário*</label>
-          <input class="form-input" type="text" name="email" placeholder="Digite seu e-mail ou usuario!">
-        </div>
-        <div class="flex-form-item">
-          <label class="form-label">Senha*</label>
-          <input class="form-input" type="password" name="password" placeholder="Digite sua senha!">
-        </div>
-         
-        <div class="flex-form-option">
-          <div class="option-remember">
-            <input type="checkbox" name="remember" value="remeber"><label>Lembrar senha!</label>
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">            
+              <div class="card-body">
+                <h5 class="card-title text-center">Login</h5>
+                <form action="/login" class="form-signin" method="post">
+                    @CSRF
+                    {{METHOD_FIELD('POST')}}
+
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" name="email"
+                      placeholder="Digite seu e-mail ou usuario" required autofocus>
+                    <label for="inputEmail">E-mail ou usuario</label>
+                  </div>
+
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" name="password"
+                       placeholder="Digite sua senha!" required>
+                    <label for="inputPassword">Senha</label>
+                  </div>
+
+                  <div class="row mb-3 justify-content-around remember-content">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember">
+                      <label class="custom-control-label " name="remember" value="remember"
+                          for="remember">Lembrar senha</label>
+                    </div>
+                    <div class="">
+                      <a class="option-forget ml-5" href="remeber.html">Esqueceu sua senha?</a>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-lg btn-block submit text-uppercase" type="submit" 
+                          name="btn">Entrar</button>
+                </form>
+              </div>
+            </div>
           </div>
-          <a class="option-forget" href="remeber.html">Esqueceu sua senha!</a>
         </div>
-        <input type="submit" class="item-input btn-login" name="btn" value="Logar">
-      </form>
-      <footer class="footer">
-        Copyright 2018 - Todos os direitos reservados -
-      </footer>
-    </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
