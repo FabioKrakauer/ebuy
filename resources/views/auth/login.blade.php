@@ -21,7 +21,9 @@
                 <form action="/login" class="form-signin" method="post">
                     @CSRF
                     {{METHOD_FIELD('POST')}}
-
+                    @if ($errors->has('email'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('email') }}</strong></span>
+                    @endif
                   <div class="form-label-group">
                     <input type="email" id="inputEmail" class="form-control" name="email"
                       placeholder="Digite seu e-mail ou usuario" required autofocus>
@@ -32,6 +34,7 @@
                     <input type="password" id="inputPassword" class="form-control" name="password"
                        placeholder="Digite sua senha!" required>
                     <label for="inputPassword">Senha</label>
+
                   </div>
 
                   <div class="row mb-3 justify-content-around remember-content">
