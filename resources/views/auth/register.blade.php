@@ -79,6 +79,10 @@
           <label class="item-label" for="password_conf">Confirme sua senha <span class="item-span">*</span></label>
           <input class="item-input" type="password" name="password_confirmation" placeholder="Confirme sua senha">
         </div>
+        <div class="flex-form-item">
+          <label class="item-label" for="password_conf">Foto de perfil <span class="item-span">*</span></label>
+          <input class="item-input" type="file" name="photo">
+        </div>
         <input class="btn-register" type="submit" name="register" value="Cadastrar">
       </form>
       <footer class="footer">
