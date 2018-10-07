@@ -65,7 +65,7 @@
                   <div class="flex-form-item">
                     <label for="inputBirth">Data de Nascimento</label>
                     <div class="form-label-group">
-                      <input type="date" id="inputBirth" class="form-control" name="dateOfBirth" required>
+                      <input type="date" id="inputBirth" class="form-control" name="born" required>
                     </div>
                   </div>
                    @if ($errors->has('phone'))
