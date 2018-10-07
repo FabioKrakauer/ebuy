@@ -19,8 +19,7 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Cadastro</h5>
                 {{-- Confirmar se a classe do form está correta, se alterar, muda o botão --}}
-                <form action="/login" class="form-signin" method="post">
-                  {{-- Fábio checar método post do laravel --}}
+                <form action="/register" class="form-signin" method="post">
                     @CSRF
                     {{METHOD_FIELD('POST')}}
                     @if ($errors->has('email'))
@@ -31,43 +30,64 @@
                     placeholder="Digite seu e-mail ou usuario" required autofocus>
                     <label for="inputEmail">E-mail ou usuario</label>
                   </div>
+                  @if ($errors->has('name'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('name') }}</strong></span>
+                    @endif
                   <div class="form-label-group">
-                    <input type="email" id="inputName" class="form-control" name="name"           placeholder="Digite seu nome completo" required>
+                    <input type="text" id="inputName" class="form-control" name="name" placeholder="Digite seu nome completo" required>
                     <label for="inputName">Nome completo</label>
                   </div>
+                  @if ($errors->has('sexo'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('sexo') }}</strong></span>
+                    @endif
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputFemale" value="option1">
+                    <input class="form-check-input" type="radio" id="inputFemale" name="sexo" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Feminino</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputMale" value="option2">
+                    <input class="form-check-input" type="radio" id="inputMale" name="sexo" value="option2">
                     <label class="form-check-label" for="inlineRadio2">Masculino</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputOther" value="option3" checked>
+                    <input class="form-check-input" type="radio" id="inputOther" name="sexo" value="option3" checked>
                     <label class="form-check-label" for="inlineRadio3">Outro</label>
                   </div><br>
+                   @if ($errors->has('cpf'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('cpf') }}</strong></span>
+                    @endif
                   <div class="form-label-group">
                     <input type="number" id="inputCPF" class="form-control"  name="cpf" placeholder="___.___.___-__" required>
                     <label for="inputCPF">CPF</label>
                   </div>
+                   @if ($errors->has('born'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('born') }}</strong></span>
+                    @endif
                   <div class="flex-form-item">
                     <label for="inputBirth">Data de Nascimento</label>
                     <div class="form-label-group">
                       <input type="date" id="inputBirth" class="form-control" name="dateOfBirth" required>
                     </div>
                   </div>
+                   @if ($errors->has('phone'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('phone') }}</strong></span>
+                    @endif
                   <div class="flex-form-item form-label-group">
                     <label for="inputPhone">Telefone de Contato</label>
                     <input type="number" id="inputPhone" class="form-control" name="phone">
                   </div>
+                   @if ($errors->has('password'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('password') }}</strong></span>
+                    @endif
                   <div class="form-label-group">
                     <input type="password" id="inputPassword" class="form-control" name="password"
                        placeholder="Digite sua senha!" required>
                     <label for="inputPassword">Senha</label>
                   </div>
+                  @if ($errors->has('password_confirmation'))
+                      <span class="help-block"><strong style="color: red;">{{ $errors->first('password_confirmation') }}</strong></span>
+                    @endif
                   <div class="form-label-group">
-                    <input type="password-confirmation" id="inputPasswordConfirmation" class="form-control" name="password-confirmation"
+                    <input type="password-confirmation" id="inputPasswordConfirmation" class="form-control" name="password_confirmation"
                        placeholder="Digite sua senha!" required>
                     <label for="inputPasswordConfirmation">Confirme a Senha</label>
                   </div>
