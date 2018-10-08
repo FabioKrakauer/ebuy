@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/footer.css">    
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Login</title>
   </head>
   <body>
-    <header class="">
-
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-md navbar-dark navbar-login flex-row">
+          <a class="navbar-brand mr-auto" href="/">
+            Logo
+          </a>
+      </nav>
     </header>
         <div class="container">
         <div class="row">
@@ -57,7 +62,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <footer class="footer_login">
           <div class="footer-copyright text-center py-3">© 2018 Copyright:
           </div>
       </footer>
