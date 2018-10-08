@@ -27,7 +27,7 @@
                   <a class="nav-link dropdown-toggle mr-3 mr-lg-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i><span class="caret"></span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="">User</a>
+                      <a class="dropdown-item" href="">Usuario</a>
                       <a class="dropdown-item" href="">Login</a>
                   </div>
               </li>
