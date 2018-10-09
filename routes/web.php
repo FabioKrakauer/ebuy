@@ -24,6 +24,10 @@ Route::get('/admin', function(){
 Route::get('/no-acess', function(){
 	return view('no-acess');
 });
+
+//ADMIN PAGES
+
+Route::get('/produtos', 'ProdutosController@viewPage');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
