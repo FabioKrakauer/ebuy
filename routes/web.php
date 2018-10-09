@@ -18,6 +18,12 @@ Route::get('/', function () {
 Route::get('/faq', function(){
 	return view('faq');
 });
+Route::get('/admin', function(){
+	redirect('/faq');
+})->middleware('auth')->middleware('admin');
+Route::get('/no-acess', function(){
+	return view('no-acess');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
