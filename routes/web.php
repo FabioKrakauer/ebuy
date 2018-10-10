@@ -21,6 +21,7 @@ Route::get('/faq', function(){
 Route::get('/admin', function(){
 	redirect('/faq');
 })->middleware('auth')->middleware('admin');
+
 Route::get('/no-acess', function(){
 	return view('no-acess');
 });
@@ -28,6 +29,7 @@ Route::get('/no-acess', function(){
 //ADMIN PAGES
 
 Route::get('/produtos', 'ProdutosController@viewPage');
+Route::get('/produtos/adicionar', 'ProdutosController@addReturnView');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
