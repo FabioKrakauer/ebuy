@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Produto;
+use \App\Estoque;
 
 class ProdutosController extends Controller
 {
@@ -33,6 +34,12 @@ class ProdutosController extends Controller
            'img_source' => $newName,
        ]);
        $insert->save();
+       $getId = Produto::where('nome', $r->input('name'))->value('id');
+       $insertEstoque = Estoque::create([
+           'produto_id' => $getId,
+           'quantidade' => $r->input('estoque'),
+       ]);
+       $insertEstoque->save();
        return 'Produto adicionado!';
     }
 }

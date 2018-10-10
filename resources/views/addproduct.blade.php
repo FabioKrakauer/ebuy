@@ -20,7 +20,8 @@
     </form>
     @if(count($errors)>0)
         @foreach($errors as $e)
-            {{$e}}
+            {{$e->first}}
+            erro
         @endforeach
     @endif
 </body>

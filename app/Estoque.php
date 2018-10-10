@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Estoque extends Model
 {
-    protected $table = 'produto';
+    protected $table = 'estoque';
     protected $fillable = ['produto_id','quantidade'];
 
   public function genero(){
