@@ -29,8 +29,10 @@ Route::get('/no-acess', function(){
 //ADMIN PAGES
 
 Route::get('/produtos', 'ProdutosController@viewPage');
-Route::get('/produtos/adicionar', 'ProdutosController@addReturnView')->middleware('auth')->middleware('admin');
-Route::post('/produtos/adicionar', 'ProdutosController@addProduct');
+
+Route::get('/admin/produtos/adicionar', 'ProdutosController@addReturnView')->middleware('auth')->middleware('admin');
+Route::post('/admin/produtos/adicionar', 'ProdutosController@addProduct');
+Route::get('/admin/produtos', 'ProdutosController@viewAdminProductsPage')->middleware('auth')->middleware('admin');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

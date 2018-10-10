@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <form action="/produtos/adicionar" method="post" enctype="multipart/form-data">
+    <form action="/admin/produtos/adicionar" method="post" enctype="multipart/form-data">
         @CSRF
         {{METHOD_FIELD('POST')}}
         

@@ -42,5 +42,9 @@ class ProdutosController extends Controller
        $insertEstoque->save();
        return 'Produto adicionado!';
     }
+    public function viewAdminProductsPage(){
+        $products = Produto::all();
+    	return view('adminproduct')->with('produtos', $products);
+    }
 }
 
