@@ -9,7 +9,7 @@
 		<p>Nome do produto: <b>{{$produto->nome}}</b></p>
 		<p>Preço: {{$produto->preco}}</p>
 		<p>Sobre: {{$produto->descricao}}</p>
-		<img src="{{$produto->img_source}}" alt="" />		
+		<img src="{{ URL::to('/') }}/images/{{$produto->img_source}}" alt="" />		
     @endforeach
 
 </body>

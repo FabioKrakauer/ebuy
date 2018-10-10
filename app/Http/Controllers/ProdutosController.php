@@ -11,4 +11,29 @@ class ProdutosController extends Controller
     	$products = Produto::all();
     	return view('produtos')->with('produtos', $products);
     }
+    public function addReturnView(){
+        return view('addproduct');
+    }
+    public function addProduct(Request $r){
+        $validate = $r->validate([
+            'name' => 'required|string|min:5|unique:produto,nome',
+            'price' =>'required|integer|min:1',
+            'desc' => 'required|string|min:5',
+            'estoque' => 'required|integer|min:1',
+            'file' => 'required|max:10000|image|mimes:jpg,jpeg,png',
+        ]);
+       $img = $r->file('file');
+       $newName = time()."." . $img->getClientOriginalExtension();
+       $img->move(public_path("images"), $newName);
+
+       $insert = Produto::create([
+           'nome' =>$r->input('name'),
+           'preco' => $r->input('price'),
+           'descricao' => $r->input('desc'),
+           'img_source' => $newName,
+       ]);
+       $insert->save();
+       return 'Produto adicionado!';
+    }
 }
+
