@@ -27,27 +27,26 @@
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-purple overflow-hidden">
-        <div class="my-3 color-1">
-          <h2 class="display-5">Produto 1</h2>
-          <p class="lead">Descrição do produto 1</p>
-        </div>
-        <div class="bg-purple box-shadow mx-auto mb-3" style="width: 80%; height: 300px; border-radius: 21px;"></div>
-      </div>
-      <div class="bg-purple mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      {{-- <div class="bg-purple mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3">
           <h2 class="display-5">Produto 2</h2>
           <p class="lead">Descrição do produto 2</p>
         </div>
         <div class="bg-light box-shadow mx-auto mb-3" style="width: 80%; height: 300px; border-radius: 21px;"></div>
-      </div>
+      </div> --}}
+      @foreach ($produtos as $produto)
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-purple overflow-hidden border-bottom border-5">
+          <div class="my-3 purple">
+            <h2 class="display-5">{{$produto->nome}}</h2>
+            <p class="lead">{{$produto->preco}}</p>
+            <p class="">{{$produto->descricao}}</p>
+          </div>
+          <div class="box-shadow mx-auto mb-3" style="width: 80%; height: 300px; border-radius: 21px; background-image:url({{ URL::to('/') }}/images/{{$produto->img_source}})">
+          </div>
+        </div>
+      @endforeach
     </div>
 
-		@foreach ($produtos as $produto)
-			<p>Nome do produto: <b>{{$produto->nome}}</b></p>
-			<p>Preço: {{$produto->preco}}</p>
-			<p>Sobre: {{$produto->descricao}}</p>
-			<img src="{{ URL::to('/') }}/images/{{$produto->img_source}}" alt="" />
-    @endforeach
+
   </body>
 </html>

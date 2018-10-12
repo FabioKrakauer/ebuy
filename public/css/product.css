@@ -58,12 +58,16 @@
  *Design products
 */
 
-.color-1 {
+.purple {
   color: #62008e;
 }
 
 .bg-purple {
   background-color: #62008e;
+}
+
+.product-element {
+  border-bottom: 5px;
 }
 
 /*
