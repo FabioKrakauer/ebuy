@@ -1,0 +1,9 @@
+.footer_login {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#6f008c;
+    color: white;
+    text-align: center;
+}
