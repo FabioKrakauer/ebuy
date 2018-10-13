@@ -1,27 +1,20 @@
-{{-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Create Faq</title>
-</head>
-<body>
-a
-</body>
-</html> --}}
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/faq.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<title>FAQ - E-buy</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="https://getbootstrap.com/favicon.ico">
+	<title>FAQ</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<link href="css/faq.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-
-	</header>
 	<div class="flex-container">
 		<h1 class="title">FAQ - Perguntas Frequentes</h1>
 		<div class="flex-articles">
@@ -79,9 +72,6 @@ a
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			Copyright 2018 - Todos os direitos reservados -
-		</footer>
 	</div>
 </body>
 </html>
