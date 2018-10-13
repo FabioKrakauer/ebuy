@@ -64,6 +64,7 @@ class ProdutosController extends Controller
         $product = Produto::find($id);
         $product->delete();
         return '<b>Produto Deletado!</b>';
+        
     }
 }
 
