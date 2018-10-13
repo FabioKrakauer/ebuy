@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Produto;
 use \App\Estoque;
+use DB;
 
 class ProdutosController extends Controller
 {
@@ -45,6 +46,24 @@ class ProdutosController extends Controller
     public function viewAdminProductsPage(){
         $products = Produto::all();
     	return view('adminproduct')->with('produtos', $products);
+    }
+    public function viewModifyProduct($id){
+        $produto = Produto::find($id);
+        return view('modifyproduct')->with('produto', $produto);
+    }
+    public function modifyProduct(Request $r, $pid){
+        $product = Produto::find($pid);
+        $estoque = DB::table('estoque')->where('produto_id', $pid)->update(['quantidade' => $r->input('estoque')]);
+        $product->nome = $r->input('name');
+        $product->preco = $r->input('price');
+        $product->descricao = $r->input('desc');
+        $product->save();
+        return redirect('/admin/produtos');
+    }
+    public function deleteProduct($id){
+        $product = Produto::find($id);
+        $product->delete();
+        return '<b>Produto Deletado!</b>';
     }
 }
 

@@ -33,6 +33,9 @@ Route::get('/produtos', 'ProdutosController@viewPage');
 Route::get('/admin/produtos/adicionar', 'ProdutosController@addReturnView')->middleware('auth')->middleware('admin');
 Route::post('/admin/produtos/adicionar', 'ProdutosController@addProduct');
 Route::get('/admin/produtos', 'ProdutosController@viewAdminProductsPage')->middleware('auth')->middleware('admin');
+Route::get('/admin/produtos/modificar/{id}', 'ProdutosController@viewModifyProduct')->middleware('auth')->middleware('admin');
+Route::put('/admin/produtos/modificar/{id}', 'ProdutosController@modifyProduct');
+Route::get('/admin/produtos/deletar/{id}', 'ProdutosController@deleteProduct')->middleware('auth')->middleware('admin');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

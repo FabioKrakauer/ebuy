@@ -17,6 +17,8 @@
 		<p>Preço: {{$produto->preco}}</p>
 		<p>Sobre: {{$produto->descricao}}</p>
         <p>Quantidade no estoque: {{$estoque}} </p>
+        <a href="/admin/produtos/modificar/{{$produto->id}}">Clique aqui para modificar o produto</a>
+        <a href="/admin/produtos/deletar/{{$produto->id}}">Clique aqui para deletar o produto</a>
 		<img src="{{ URL::to('/') }}/images/{{$produto->img_source}}" alt="" />		
     @endforeach
     
