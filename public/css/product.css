@@ -58,7 +58,11 @@
  *Design products
 */
 
+<<<<<<< HEAD
 .purple {
+=======
+.color-1 {
+>>>>>>> 5a1a5968d7b10bf932a9725c4d00b2e3bdbb65f2
   color: #62008e;
 }
 
@@ -66,10 +70,13 @@
   background-color: #62008e;
 }
 
+<<<<<<< HEAD
 .product-element {
   border-bottom: 5px;
 }
 
+=======
+>>>>>>> 5a1a5968d7b10bf932a9725c4d00b2e3bdbb65f2
 /*
  * Extra utilities
  */
