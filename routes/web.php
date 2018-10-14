@@ -23,6 +23,10 @@ Route::get('/cart', function(){
 	return view('cart');
 });
 
+Route::get('/payment', function(){
+	return view('payment');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
