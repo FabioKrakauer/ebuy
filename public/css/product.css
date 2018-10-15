@@ -70,6 +70,24 @@
   border-bottom: 5px;
 }
 
+.shadow-effect {
+  border: solid white;
+}
+
+.shadow-effect:hover {
+  border: solid #62008e;
+}
+
+.card-border {
+  border-radius: 21px;
+}
+
+.product-img {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px;
+}
+
 /*
  * Extra utilities
  */
