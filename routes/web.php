@@ -38,4 +38,8 @@ Route::put('/admin/produtos/modificar/{id}', 'ProdutosController@modifyProduct')
 Route::get('/admin/produtos/deletar/{id}', 'ProdutosController@deleteProduct')->middleware('auth')->middleware('admin');
 Auth::routes();
 
+Route::get('/cart', function(){
+	return view('cart');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
