@@ -14,7 +14,7 @@ class AddImgFromToProfile extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('img_perfil');
+            $table->string('img_perfil')->nullable();
         });
     }
 
