@@ -1,4 +1,20 @@
-.btn-buy {
+.navbar-login {
     background-color: #62008e !important;
-    color: white;
+}
+
+.navbar_home {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_home ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.navbar_home i {
+    color: #62008e;
+    font-size: 17px;
+    padding: 10px;
 }

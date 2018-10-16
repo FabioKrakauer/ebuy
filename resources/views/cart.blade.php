@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
-
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Produtos</title>
 
     <!-- Bootstrap core CSS -->
@@ -16,26 +16,26 @@
 
     <!-- Custom styles for this template -->
     <link href="css/product.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/navbar.css">
   </head>
 
   <body>
   <header>
-    <nav class="navbar navbar-dark primary-color navbar_home">
-      <a class="navbar-brand mt-2" href="#">
-        <img src='assets/logo.png' height="60" alt="mdb logo">
-      </a>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item">
-          <a href="#"><i class="fas fa-user"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container mt-5">
+  <nav class="navbar navbar-dark primary-color navbar_home">
+    <a class="navbar-brand mt-2" href="#">
+      <img src='/assets/logo.png' height="60" alt="mdb logo">
+    </a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a href="#"><i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <div class="container mt-5" style="margin:140px">
     <div class="row">
         <div class="col-sm-12">
             <table class="table table-hover">
@@ -99,5 +99,9 @@
         </div>
     </div>
 </div>
+<footer class="footer_home">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    </div>
+</footer>
   </body>
 </html>

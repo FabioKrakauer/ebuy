@@ -7,10 +7,29 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/adminproduct.css" >
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
     <title>Admin produtos</title>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-dark primary-color navbar_home">
+      <a class="navbar-brand mt-2" href="#">
+        <img src='/assets/logo.png' height="60" alt="mdb logo">
+      </a>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="container-fluid">
     <div class="row">
@@ -47,8 +66,9 @@
         @endforeach
     </div>
   </div>
-
-
-
+  <footer class="footer_home">
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      </div>
+  </footer>
 </body>
 </html>
