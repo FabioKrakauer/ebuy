@@ -7,16 +7,11 @@
 	<meta name="author" content="">
 	<link rel="icon" href="https://getbootstrap.com/favicon.ico">
 	<title>FAQ</title>
-
-	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-	<!-- Custom styles for this template -->
-	<link href="css/faq.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/faq.css" >
 	<link rel="stylesheet" href="/css/footer.css">
 	<link rel="stylesheet" href="/css/navbar.css">
-
 </head>
 <body>
 	<header>
@@ -34,9 +29,74 @@
 		</ul>
 	</nav>
 </header>
-	<div class="flex-container">
-		<h1 class="title">FAQ - Perguntas Frequentes</h1>
-		<div class="flex-articles">
+<h1 class="container md-8">FAQ - Perguntas Frequentes</h1>
+	<div class="container md-3">
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+		<div class="card" style="margin:5px;">
+			<div class="card-header">
+					Existe uma quantidade máxima no meu pedido?
+			</div>
+			<div class="card-body">
+				Não, a quantidade de items por pedido é ilimitada
+			</div>
+		</div>
+	</div>
+		<!-- <div class="flex-articles">
 			<div class="flex-articles-line">
 				<div class="faq">
 				<p class="faq-title">Existe uma quantidade máxima no meu pedido?</p>
@@ -91,7 +151,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<footer class="footer_home">
 			<div class="footer-copyright text-center py-3">© 2018 Copyright:
 			</div>
