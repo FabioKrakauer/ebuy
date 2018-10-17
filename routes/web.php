@@ -30,7 +30,7 @@ Route::get('/no-acess', function(){
 
 Route::get('/produtos', 'ProdutosController@viewPage');
 
-Route::get('/carrinho', 'CarrinhoController@viewCarrinho');
+Route::get('/carrinho', 'CarrinhoController@viewCarrinho')->middleware('auth');
 Route::get('/carrinho/adicionar/{id}', 'CarrinhoController@addCarinho')->middleware('auth');
 Route::get('/carrinho/quantidade/adicionar/{id}' , 'CarrinhoController@qntAdd')->middleware('auth');
 Route::get('/carrinho/quantidade/remover/{id}' , 'CarrinhoController@qntRem')->middleware('auth');
@@ -44,16 +44,7 @@ Route::put('/admin/produtos/modificar/{id}', 'ProdutosController@modifyProduct')
 Route::get('/admin/produtos/deletar/{id}', 'ProdutosController@deleteProduct')->middleware('auth')->middleware('admin');
 Auth::routes();
 
-Route::get('/payment', function(){
-	return view('payment');
-});
-
-Route::get('/cart', function(){
-	return view('cart');
-});
+Route::get('/pagamento', 'CarrinhoController@checkout')->middleware('auth');
+Route::post('/pagamento', 'CarrinhoController@paymentConfirmed')->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/products', function () {
-  return view('products');
-});

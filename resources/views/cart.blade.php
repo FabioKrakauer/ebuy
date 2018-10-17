@@ -101,7 +101,7 @@
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continuar Comprando
                         </a></td>
                         <td>
-                        <a href="/pagar" class="btn btn-buy">
+                        <a href="/pagamento" class="btn btn-buy">
                             Comprar <span class="glyphicon glyphicon-play"></span>
                         </a></td>
                     </tr>

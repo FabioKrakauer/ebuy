@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Produto;
 use Session;
+use DB;
 
 class CarrinhoController extends Controller
 {
@@ -82,6 +83,28 @@ class CarrinhoController extends Controller
              }
             Session::put('cart', $newArray);
             return redirect('/carrinho');
+        }
+    }
+    public function checkout(){
+        if(!Session::has('cart')){
+            return 'Seu carrinho esta vazio!';
+        }else{
+
+            return view('payment')->with('carts', Session::get('cart'));
+        }
+    }
+    public function paymentConfirmed(){
+        if(Session::has('cart')){
+            $products = Session::get('cart');
+            foreach($products as $product){
+                $estoqueQnt = DB::table('estoque')->where('produto_id', $product['product_id'])->get();
+                $array = $estoqueQnt->toArray();
+                $quantidadeAtual = $array[0]->quantidade;
+                $quantidadeComprada = $product['qnt'];
+                $novaQuantidade =  $quantidadeAtual - $quantidadeComprada;
+                $estoque = DB::table('estoque')->where('produto_id', $product['product_id'])->update(['quantidade' => $novaQuantidade]);            
+            }
+            return 'Compra realizada com sucesso!';   
         }
     }
 }
