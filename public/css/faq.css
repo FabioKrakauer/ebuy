@@ -1,0 +1,17 @@
+.card-header{
+  background:#8A2BE2;
+}
+
+.card-body{
+  padding:15px;
+}
+
+.btn-link{
+  color:white;
+  font-weight:bold;
+}
+
+.card{
+  margin:10px;
+  border-radius:20px;
+}
