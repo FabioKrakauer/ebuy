@@ -49,50 +49,61 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $subtotal = 0; ?>
+                    @foreach($carts as $cart)
+                    <?php
+                    $preco = (int)$cart['price'];
+                    $total = $preco * $cart['qnt'];
+                    ?>
                     <tr>
                         <td class="col-sm-8 col-md-6">
                         <div class="media">
                             <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Produto 1</a></h4>
+                                <h4 class="media-heading"><a href="#">{{$cart['name']}}</a></h4>
                             </div>
                         </div></td>
                         <td class="col-sm-1 col-md-1" style="text-align: center">
-                        <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                            <a href="/carrinho/quantidade/adicionar/{{$cart['product_id']}}">Adicionar</a>
+                            <a href="/carrinho/quantidade/remover/{{$cart['product_id']}}">Remover</a>
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="{{$cart['qnt']}}" disabled>
                         </td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>R$0,00</strong></td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>R$0,00</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>{{$cart['price']}}</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>R${{$total}}</strong></td>
                         <td class="col-sm-1 col-md-1">
-                        <button type="button" class="btn btn-danger">
+                        <a href="/carrinho/remover/{{$cart['product_id']}}" class="btn btn-danger">
                             <span class="glyphicon glyphicon-remove"></span> Remover
-                        </button></td>
+                        </a></td>
                     </tr>
-
+                    <?php 
+                        $subtotal += $total;
+                    ?>
+                    @endforeach
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
                         <td><h5>Subtotal</h5></td>
-                        <td class="text-right"><h5><strong>R$0.59</strong></h5></td>
+                        <td class="text-right"><h5><strong>R${{$subtotal}}</strong></h5></td>
                     </tr>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
                         <td><h3>Total</h3></td>
-                        <td class="text-right"><h3><strong>R$0.00</strong></h3></td>
+                        <td class="text-right"><h3><strong>R${{$subtotal}}</strong></h3></td>
                     </tr>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
                         <td>
-                        <button type="button" class="btn btn-default">
+                        <a class="btn btn-default" href="/produtos">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continuar Comprando
-                        </button></td>
+                        </a></td>
                         <td>
-                        <button type="button" class="btn btn-buy">
+                        <a href="/pagar" class="btn btn-buy">
                             Comprar <span class="glyphicon glyphicon-play"></span>
-                        </button></td>
+                        </a></td>
                     </tr>
                 </tbody>
             </table>

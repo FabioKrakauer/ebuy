@@ -55,6 +55,7 @@
                 <h2 class="display-5 h-100">{{$produto->nome}}</h2>
                 <p class="lead">R${{$produto->preco}}</p>
                 <p class="">{{$produto->descricao}}</p>
+                <a href="/carrinho/adicionar/{{$produto->id}}">Clique aqui para adicionar ao carrinho</a>
               </div>
               <div class="box-shadow mx-auto mb-3 product-img" style="background-image:url({{ URL::to('/') }}/images/{{$produto->img_source}})">
               </div>

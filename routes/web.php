@@ -30,6 +30,12 @@ Route::get('/no-acess', function(){
 
 Route::get('/produtos', 'ProdutosController@viewPage');
 
+Route::get('/carrinho', 'CarrinhoController@viewCarrinho');
+Route::get('/carrinho/adicionar/{id}', 'CarrinhoController@addCarinho')->middleware('auth');
+Route::get('/carrinho/quantidade/adicionar/{id}' , 'CarrinhoController@qntAdd')->middleware('auth');
+Route::get('/carrinho/quantidade/remover/{id}' , 'CarrinhoController@qntRem')->middleware('auth');
+Route::get('/carrinho/remover/{id}', 'CarrinhoController@removeCarrinho')->middleware('auth');
+
 Route::get('/admin/produtos/adicionar', 'ProdutosController@addReturnView')->middleware('auth')->middleware('admin');
 Route::post('/admin/produtos/adicionar', 'ProdutosController@addProduct');
 Route::get('/admin/produtos', 'ProdutosController@viewAdminProductsPage')->middleware('auth')->middleware('admin');
