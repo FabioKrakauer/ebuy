@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>Cadastro</title>
   </head>
   <body>
-    <header class="">
-
+    <header>
+      <nav class="navbar navbar-dark primary-color navbar_home">
+        <a class="navbar-brand mt-2" href="#">
+          <img src='/assets/logo.png' height="60" alt="mdb logo">
+        </a>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
         <div class="container">
         <div class="row">
@@ -42,15 +55,15 @@
                       <span class="help-block"><strong style="color: red;">{{ $errors->first('sexo') }}</strong></span>
                     @endif
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputFemale" name="sexo" value="option1">
+                    <input class="form-check-input" type="radio" id="inputFemale" name="sexo" value="female">
                     <label class="form-check-label" for="inlineRadio1">Feminino</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputMale" name="sexo" value="option2">
+                    <input class="form-check-input" type="radio" id="inputMale" name="sexo" value="male">
                     <label class="form-check-label" for="inlineRadio2">Masculino</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="inputOther" name="sexo" value="option3" checked>
+                    <input class="form-check-input" type="radio" id="inputOther" name="sexo" value="other" checked>
                     <label class="form-check-label" for="inlineRadio3">Outro</label>
                   </div><br>
                    @if ($errors->has('cpf'))
@@ -100,7 +113,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer_login">
+      <footer class="footer_home">
           <div class="footer-copyright text-center py-3">© 2018 Copyright:
           </div>
       </footer>
@@ -109,98 +122,3 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-{{-- <!DOCTYPE html>
-<html dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <title>Cadastro</title>
-  </head>
-  <body>
-    <header class="flex-header">
-        <label class="header-logo">
-          <a class="logo-a" href="index.php">E-Buy</a>
-        </label>
-        <label for="toggle-menu"><img class="toggle-menu-icon" src="images/toggle.png" alt=""></label>
-        <input type="checkbox" id="toggle-menu">
-        <div class="navigation">
-          <ul class="nav-ul">
-            <li class="nav-li">
-              <a class="nav-a" href="index.php">Home</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="login.php">Login</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="register.php">Cadastro</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" href="faq.php">FAQ</a>
-            </li>
-          </ul>
-        </div>
-    </header>
-    <div class="flex-container">
-      <form class="flex-form" action="/register" method="post">
-        @CSRF
-        {{METHOD_FIELD('POST')}}
-
-        <div class="flex-form-item">
-          <label class="item-label" for="email">E-mail: <span class="item-span">*</span></label>
-          <input class="item-input" type="email" name="email" placeholder="Digite seu e-mail" >
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">Nome completo <span class="item-span">*</span></label>
-          <input class="item-input" type="name" name="name" placeholder="Digite seu nome completo" value="">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">Sexo <span class="item-span">*</span></label>
-          <div class="item-radio">
-            <div class="radio-option">
-              <input class="option-input" type="radio" name="sexo" value="Masculino"><label for="gender">Masculino</label>
-            </div>
-            <div class="radio-option">
-              <input class="option-input" type="radio" name="sexo" value="Feminino"><label for="gender">Feminino</label>
-            </div>
-            <div class="radio-option">
-              <input class="option-input" type="radio" name="sexo" value="Outro"><label for="gender">Outro</label>
-            </div>
-          </div>
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">CPF<span class="item-span">*</span></label>
-          <input class="item-input" type="number" name="cpf" placeholder="___.___.___-__" value="" >
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">Data de Nascimento <span class="item-span">*</span></label>
-          <input class="item-input" type="date" name="born" placeholder="" value="">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="name">Telefone de Contato <span class="item-span">* </span></label>
-          <input class="item-input" type="number" name="phone" placeholder="(__)_____-____" value="">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="password">Senha <span class="item-span">*</span></label>
-          <input class="item-input" type="password" name="password" placeholder="Digite sua senha">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="password_conf">Confirme sua senha <span class="item-span">*</span></label>
-          <input class="item-input" type="password" name="password_confirmation" placeholder="Confirme sua senha">
-        </div>
-        <div class="flex-form-item">
-          <label class="item-label" for="password_conf">Foto de perfil <span class="item-span">*</span></label>
-          <input class="item-input" type="file" name="photo">
-        </div>
-        <input class="btn-register" type="submit" name="register" value="Cadastrar">
-      </form>
-      <footer class="footer">
-        Copyright 2018 - Todos os direitos reservados -
-      </footer>
-    </div>
-  </body>
-</html> --}}
