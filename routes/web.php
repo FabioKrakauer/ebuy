@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProdutosController@viewPage');
 
 Route::get('/faq', function(){
 	return view('faq');
