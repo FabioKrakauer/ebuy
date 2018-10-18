@@ -45,6 +45,27 @@
   border-radius: 21px;
 }
 
+.btn {
+font-size: 80%;
+border-radius: 5rem;
+letter-spacing: .1rem;
+font-weight: bold;
+padding: 1rem;
+transition: all 0.2s;
+background: #62008e;
+color: #FFFFFF;
+}
+
+.add-link {
+  color: white;
+  text-decoration: none;
+}
+
+.add-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 =======
 >>>>>>> 5a1a5968d7b10bf932a9725c4d00b2e3bdbb65f2
 /*

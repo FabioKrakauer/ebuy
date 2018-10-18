@@ -42,15 +42,25 @@
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
     <p>Pagamento</p>
-
+    <?php $subtotal = 0; ?>
+    @foreach($carts as $cart)
+        <?php
+            $preco = (int)$cart['price'];
+            $total = $preco * $cart['qnt'];
+            $subtotal += $total;
+        ?>
+    @endforeach
     <article class="card">
     <div class="card-body p-5">
+        <b><p style="text-align: center;">Valor a pagar: R${{$subtotal}}</p></b>
     <p> <img src="http://bootstrap-ecommerce.com/main/images/icons/pay-visa.png">
         <img src="http://bootstrap-ecommerce.com/main/images/icons/pay-mastercard.png">
     <img src="http://bootstrap-ecommerce.com/main/images/icons/pay-american-ex.png">
     </p>
 
-    <form role="form">
+    <form role="form" action="/pagamento" method="post">
+        @CSRF
+        {{METHOD_FIELD('POST')}}
     <div class="form-group">
     <label for="username">Nome Completo do Cartão</label>
     <div class="input-group">
@@ -107,7 +117,7 @@
             </div>
         </div>
     </div>
-    <button class="subscribe btn btn-primary btn-block" type="button">Confirma</button>
+    <button class="subscribe btn btn-primary btn-block" type="submit">Confirma</button>
     </form>
     </div>
     </article>
