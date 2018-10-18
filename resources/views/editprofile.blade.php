@@ -66,7 +66,7 @@
                   <label class="form-check-label" for="inlineRadio3">Outro</label>
                 </div><br> --}}
                 <div class="form-label-group">
-                  <input type="number" id="inputCPF" class="form-control"  name="cpf" value="{{$user->cpf}}" disabled>
+                  <input type="text" id="inputCPF" class="form-control"  name="cpf" value="{{$user->cpf}}" disabled>
                   <label for="inputCPF">CPF</label>
                 </div>
                 <div class="flex-form-item">

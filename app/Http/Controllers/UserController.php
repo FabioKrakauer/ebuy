@@ -16,7 +16,6 @@ class UserController extends Controller
         $user = Auth::user();
         $validate = $r->validate([
             'name' => 'required|string|max:255',
-            'cpf' => 'required|string|max:11',
             'phone' => 'required|string|max:11',
             'born' => 'required|date|max:12|min:10',
             'file' => 'max:10000|mimes:jpg,jpeg,png,gif',
@@ -29,7 +28,6 @@ class UserController extends Controller
        }
        $user = User::find($user->id);
        $user->name = $r->input('name');
-       $user->cpf = $r->input('cpf');
        $user->phone = $r->input('phone');
        $user->born = $r->input('born');
        $user->img_perfil = $newName;
