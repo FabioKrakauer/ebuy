@@ -14,7 +14,7 @@
     <header class="mb-5">
       <nav class="navbar navbar-expand-md navbar-dark navbar-login flex-row">
           <a class="navbar-brand mr-auto" href="/">
-            Logo
+            <img src='/assets/logo.png' height="60" alt="mdb logo">
           </a>
       </nav>
     </header>

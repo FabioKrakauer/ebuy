@@ -24,7 +24,7 @@
 */
 
 .purple {
-  color: #62008e;
+  color: #9D00C7;
 }
 
 .shadow-effect {
@@ -32,7 +32,7 @@
 }
 
 .shadow-effect:hover {
-  border: solid #62008e;
+  border: solid #9D00C7;
 }
 
 .card-border {
@@ -62,7 +62,7 @@ letter-spacing: .1rem;
 font-weight: bold;
 padding: 1rem;
 transition: all 0.2s;
-background: #62008e;
+background: #9D00C7;
 color: #FFFFFF;
 }
 

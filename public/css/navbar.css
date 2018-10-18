@@ -1,10 +1,11 @@
 .navbar-login {
-    background-color: #62008e !important;
+    background-color: #9D00C7 !important;
 }
 
 .navbar_home {
     display: flex;
     align-items: center;
+    background-color: #9D00C7 !important;
 }
 
 .navbar_home ul{
@@ -14,7 +15,7 @@
 }
 
 .navbar_home i {
-    color: #62008e;
+    color: #9D00C7;
     font-size: 17px;
     padding: 10px;
 }
