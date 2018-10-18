@@ -15,21 +15,28 @@
     <script src="main.js"></script>
 </head>
 <body>
-  <header>
-	<nav class="navbar navbar-dark primary-color navbar_home">
-		<a class="navbar-brand mt-2" href="#">
-			<img src='/assets/logo.png' height="60" alt="mdb logo">
-		</a>
-		<ul class="nav navbar-nav navbar-right">
-			<li class="nav-item">
-				<a href="#"><i class="fas fa-user"></i></a>
-			</li>
-			<li class="nav-item">
-				<a href="#"><i class="fas fa-shopping-cart"></i></a>
-			</li>
-		</ul>
-	</nav>
-</header>
+<header>
+    <nav class="navbar navbar-dark primary-color navbar_home">
+      <a class="navbar-brand mt-2" href="#">
+        <img src='/assets/logo.png' height="60" alt="mdb logo">
+      </a>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdownMenuLink" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="">Perfil</a>
+          <a class="dropdown-item" href="">Sair</a>
+        </div>
+        </li>
+        <li class="nav-item mt-2">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 <div class="container">
   <div class="row">
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">

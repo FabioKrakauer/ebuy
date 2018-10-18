@@ -15,7 +15,15 @@
 }
 
 .navbar_home i {
-    color: #9D00C7;
+    color: white;
     font-size: 17px;
     padding: 10px;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+}
+
+.dropdown-menu a {
+    color: black;
 }

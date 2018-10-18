@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/navbar.css">
@@ -12,19 +13,22 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-dark primary-color navbar_home">
-        <a class="navbar-brand mt-2" href="#">
-          <img src='/assets/logo.png' height="60" alt="mdb logo">
-        </a>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a href="#"><i class="fas fa-user"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar navbar-dark primary-color navbar_home">
+          <a class="navbar-brand mt-2" href="#">
+            <img src='/assets/logo.png' height="60" alt="mdb logo">
+          </a>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="navbarDropdownMenuLink" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="">Login</a>
+            </div>
+            </li>
+          </ul>
+        </nav>
     </header>
         <div class="container">
         <div class="row">
