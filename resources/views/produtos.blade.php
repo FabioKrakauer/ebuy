@@ -50,21 +50,23 @@
       <div class="row">
           @foreach ($produtos as $produto)
           <div class="col-12 col-md-6 col-xl-4 mt-3">
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-purple overflow-hidden border-5 h-100 shadow-effect card-border">
+            <div class="bg-light mb-3 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-purple overflow-hidden border-5 h-100 shadow-effect card-border">
               <div class="my-3 purple">
                 <h2 class="display-5 h-100">{{$produto->nome}}</h2>
                 <p class="lead">R${{$produto->preco}}</p>
                 <p class="">{{$produto->descricao}}</p>
-                <a href="/carrinho/adicionar/{{$produto->id}}">Clique aqui para adicionar ao carrinho</a>
+                {{-- <a href="/carrinho/adicionar/{{$produto->id}}">Clique aqui para adicionar ao carrinho</a> --}}
               </div>
               <div class="box-shadow mx-auto mb-3 product-img" style="background-image:url({{ URL::to('/') }}/images/{{$produto->img_source}})">
               </div>
+              <button href class="btn btn-lg btn-block submit text-uppercase" type="submit"
+                      name="btn"><a class="add-link" href="/carrinho/adicionar/{{$produto->id}}">Adicionar ao Carrinho</a></button>
             </div>
           </div>
           @endforeach
       </div>
     </div>
-    <footer class="footer_home">
+    <footer class="footer_home mt-5">
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
         </div>
     </footer>

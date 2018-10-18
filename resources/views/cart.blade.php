@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="css/product.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/navbar.css">
   </head>
 
@@ -59,12 +59,12 @@
                         <td class="col-sm-8 col-md-6">
                         <div class="media">
                             <div class="media-body">
-                                <h4 class="media-heading"><a href="#">{{$cart['name']}}</a></h4>
+                                <h4 class="media-heading"><a class="purple" href="#">{{$cart['name']}}</a></h4>
                             </div>
                         </div></td>
                         <td class="col-sm-1 col-md-1" style="text-align: center">
-                            <a href="/carrinho/quantidade/adicionar/{{$cart['product_id']}}">Adicionar</a>
-                            <a href="/carrinho/quantidade/remover/{{$cart['product_id']}}">Remover</a>
+                            <a class="purple" href="/carrinho/quantidade/adicionar/{{$cart['product_id']}}">Adicionar</a>
+                            <a class="purple" href="/carrinho/quantidade/remover/{{$cart['product_id']}}">Remover</a>
                         <input type="email" class="form-control" id="exampleInputEmail1" value="{{$cart['qnt']}}" disabled>
                         </td>
                         <td class="col-sm-1 col-md-1 text-center"><strong>{{$cart['price']}}</strong></td>
@@ -74,7 +74,7 @@
                             <span class="glyphicon glyphicon-remove"></span> Remover
                         </a></td>
                     </tr>
-                    <?php 
+                    <?php
                         $subtotal += $total;
                     ?>
                     @endforeach
@@ -97,7 +97,7 @@
                         <td>   </td>
                         <td>   </td>
                         <td>
-                        <a class="btn btn-default" href="/produtos">
+                        <a class="btn btn-default purple" href="/produtos">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continuar Comprando
                         </a></td>
                         <td>

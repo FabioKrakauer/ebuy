@@ -1,3 +1,66 @@
 .btn-buy {
     background-color: #62008e !important;
+    color: white;
 }
+
+.btn-buy:hover {
+    background-color: #62008e !important;
+    color: white;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Changes banner design
+*/
+#banner {
+  background-color: #62008e;
+}
+
+#banner-content {
+  color: white;
+  font-family: WillyWonka;
+}
+
+@font-face {
+  font-family: 'WillyWonka';
+  src: url('fonts/WillyWonka.ttf');
+}
+
+/*
+ *Design products
+*/
+
+.purple {
+  color: #62008e;
+}
+
+.shadow-effect {
+  border: solid white;
+}
+
+.shadow-effect:hover {
+  border: solid #62008e;
+}
+
+.card-border {
+  border-radius: 21px;
+}
+
+.product-img {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px;
+}
+
+=======
+>>>>>>> 5a1a5968d7b10bf932a9725c4d00b2e3bdbb65f2
+/*
+ * Extra utilities
+ */
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.overflow-hidden { overflow: hidden; }
