@@ -26,6 +26,8 @@ Route::get('/no-acess', function(){
 	return view('no-acess');
 });
 
+Route::get('/perfil', 'UserController@viewEditPage')->middleware('auth');
+Route::post('/perfil', 'UserController@editProfile')->middleware('auth');
 //ADMIN PAGES
 
 Route::get('/produtos', 'ProdutosController@viewPage');
