@@ -50,21 +50,6 @@
                   <input type="text" id="inputName" class="form-control" value="{{$user->name}}" name="name" required>
                   <label for="inputName">Nome completo</label>
                 </div>
-                {{-- @if ($errors->has('sexo'))
-                    <span class="help-block"><strong style="color: red;">{{ $errors->first('sexo') }}</strong></span>
-                  @endif
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" id="inputFemale" name="sexo" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Feminino</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" id="inputMale" name="sexo" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Masculino</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" id="inputOther" name="sexo" value="option3" checked>
-                  <label class="form-check-label" for="inlineRadio3">Outro</label>
-                </div><br> --}}
                 <div class="form-label-group">
                   <input type="text" id="inputCPF" class="form-control"  name="cpf" value="{{$user->cpf}}" disabled>
                   <label for="inputCPF">CPF</label>
@@ -79,8 +64,8 @@
                   <p for="inputPhone" style="margin-left: 21px">Telefone de Contato</p>
                   <input type="number" value="{{$user->phone}}" id="inputPhone" class="form-control" name="phone">
                 </div>
-                <div class="form-label-group">
-                  <label for="inputPhone">Foto Atual</label>
+                <div class="form-label-group" style="overflow: hidden; border-radius: 21px">
+                  <label >Foto Atual</label>
                   <img src="{{ URL::to('/') }}/images/{{$user->img_perfil}}" alt="">
                 </div>
                 <div class="form-label-group">
