@@ -31,7 +31,7 @@
               <i class="fa fa-user"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="">Perfil</a>
+          <a class="dropdown-item" href="http://localhost:8000/perfil">Perfil</a>
           <a class="dropdown-item" href="">Sair</a>
         </div>
         </li>
