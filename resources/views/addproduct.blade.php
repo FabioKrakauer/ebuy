@@ -19,17 +19,17 @@
       </a>
       <ul class="nav navbar-nav navbar-right">
       <li class="nav-item dropdown">
-        <a class="nav-link" id="navbarDropdownMenuLink" 
+        <a class="nav-link" id="navbarDropdownMenuLink"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-user"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="">Perfil</a>
+          <a class="dropdown-item" href="http://localhost:8000/perfil">Perfil</a>
           <a class="dropdown-item" href="">Sair</a>
         </div>
         </li>
         <li class="nav-item mt-2">
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="http://localhost:8000/carrinho"><i class="fas fa-shopping-cart"></i></a>
         </li>
       </ul>
     </nav>
