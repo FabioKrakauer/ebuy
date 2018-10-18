@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/product/ -->
-<html lang="en">
+<html lang="pt-br">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="">
     <link rel="stylesheet" href="/css/footer.css">
     <title>Produtos</title>
 
@@ -70,8 +69,12 @@
                             </div>
                         </div></td>
                         <td class="col-sm-1 col-md-1" style="text-align: center">
-                            <a class="purple" href="/carrinho/quantidade/adicionar/{{$cart['product_id']}}">Adicionar</a>
-                            <a class="purple" href="/carrinho/quantidade/remover/{{$cart['product_id']}}">Remover</a>
+                            <a class="purple" href="/carrinho/quantidade/adicionar/{{$cart['product_id']}}">
+                                <i class="fas fa-plus-square"></i>
+                            </a>
+                            <a class="purple" href="/carrinho/quantidade/remover/{{$cart['product_id']}}">
+                                <i class="fas fa-minus-square"></i>
+                            </a>
                         <input type="email" class="form-control" id="exampleInputEmail1" value="{{$cart['qnt']}}" disabled>
                         </td>
                         <td class="col-sm-1 col-md-1 text-center"><strong>{{$cart['price']}}</strong></td>
