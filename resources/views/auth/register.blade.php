@@ -19,12 +19,12 @@
           </a>
           <ul class="nav navbar-nav navbar-right">
           <li class="nav-item dropdown">
-            <a class="nav-link" id="navbarDropdownMenuLink" 
+            <a class="nav-link" id="navbarDropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="">Login</a>
+              <a class="dropdown-item" href="http://localhost:8000/login">Login</a>
             </div>
             </li>
           </ul>

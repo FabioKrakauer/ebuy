@@ -32,6 +32,6 @@ class UserController extends Controller
        $user->born = $r->input('born');
        $user->img_perfil = $newName;
        $user->save();
-       return 'Perfil atualizado! <a href="/perfil"> Clique aqui para voltar </a>';
+       return 'Perfil atualizado! <a href="/produtos"> Volte para as compa </a>';
     }
 }

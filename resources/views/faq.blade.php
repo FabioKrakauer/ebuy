@@ -27,7 +27,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="http://localhost:8000/perfil">Perfil</a>
-          <a class="dropdown-item" href="">Sair</a>
+          <a class="dropdown-item" href="http://localhost:8000/logout">Sair</a>
         </div>
         </li>
         <li class="nav-item mt-2">

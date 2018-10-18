@@ -57,7 +57,11 @@
                   </div>
 
                   <button class="btn btn-lg btn-block submit text-uppercase" type="submit"
-                          name="btn">Entrar</button>
+                          name="btn">Entrar
+                  </button>
+                  <div class="">
+                      <a class="option-register ml-2" href="/register">Cadastre-se</a>
+                  </div>
                 </form>
               </div>
             </div>

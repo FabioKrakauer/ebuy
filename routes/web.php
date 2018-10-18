@@ -48,3 +48,5 @@ Route::get('/pagamento', 'CarrinhoController@checkout')->middleware('auth');
 Route::post('/pagamento', 'CarrinhoController@paymentConfirmed')->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

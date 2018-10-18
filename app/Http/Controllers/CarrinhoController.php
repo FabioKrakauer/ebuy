@@ -38,8 +38,8 @@ class CarrinhoController extends Controller
             foreach($array as $cart){
                if($cart['product_id'] == $id){
                }else{
-                   array_push($newArray, $cart); 
-               }   
+                   array_push($newArray, $cart);
+               }
              }
              if(empty($newArray)){
                  Session::flush('cart');
@@ -58,8 +58,8 @@ class CarrinhoController extends Controller
                    $cart['qnt'] += 1;
                    array_push($newArray, $cart);
                }else{
-                   array_push($newArray, $cart); 
-               }   
+                   array_push($newArray, $cart);
+               }
              }
             Session::put('cart', $newArray);
             return redirect('/carrinho');
@@ -78,8 +78,8 @@ class CarrinhoController extends Controller
                     array_push($newArray, $cart);
                    }
                }else{
-                   array_push($newArray, $cart); 
-               }   
+                   array_push($newArray, $cart);
+               }
              }
             Session::put('cart', $newArray);
             return redirect('/carrinho');
@@ -102,9 +102,9 @@ class CarrinhoController extends Controller
                 $quantidadeAtual = $array[0]->quantidade;
                 $quantidadeComprada = $product['qnt'];
                 $novaQuantidade =  $quantidadeAtual - $quantidadeComprada;
-                $estoque = DB::table('estoque')->where('produto_id', $product['product_id'])->update(['quantidade' => $novaQuantidade]);            
+                $estoque = DB::table('estoque')->where('produto_id', $product['product_id'])->update(['quantidade' => $novaQuantidade]);
             }
-            return 'Compra realizada com sucesso!';   
+            return 'Compra realizada com sucesso! volte e confira nossas ultimas novidades clicando <a href="http://localhost:8000/produtos">aqui<href>';   
         }
     }
 }
